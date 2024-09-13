@@ -438,6 +438,33 @@ body::after {
 .spollers__item._watcher-view:nth-child(6) {
   transition-delay: 1.4s
 }
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.25rem
+}
+.benefits__item {
+  border-radius: .5rem;
+  border: 1px solid #20acf5;
+  background: #000b12;
+  box-shadow: 0 0 40px 10px rgba(32,172,245,.7);
+  display: grid;
+  grid-template-columns: 7.5rem auto;
+  gap: .9375rem;
+  align-items: center;
+  justify-items: center
+}
+.benefits__image {
+  aspect-ratio: 120/120;
+  width: 7.5rem
+}
+.benefits__title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase
+}
 .steps__title {
   text-transform: uppercase
 }
@@ -737,7 +764,7 @@ body::after {
   }
   .item-steps:nth-child(odd):not(:last-child)::before {
     height: 14.0625rem;
-    background: url(../img/right.svg) right no-repeat;
+    background: url(../img/icons/right.svg) right no-repeat;
     top: 20%;
     right: -31.25rem
   }
@@ -778,11 +805,26 @@ body::after {
   .subtitle {
     font-size: 5.625rem
   }
+  .page__benefits {
+    margin-bottom: 10rem
+  }
   .page__steps {
     margin-bottom: 8.125rem
   }
   .page__info {
     margin-bottom: 8.125rem
+  }
+  .page__courses {
+    margin-bottom: 8.125rem
+  }
+  .benefits__item {
+    gap: .9375rem
+  }
+  .benefits__item {
+    padding: 1.25rem
+  }
+  .benefits__image {
+    width: 7.5rem
   }
   .item-steps {
     padding: 2.5rem
@@ -815,6 +857,11 @@ body::after {
     margin-bottom: 3.125rem
   }
 }
+@media (max-width:30em) {
+  .benefits__image {
+    width: 3.125rem
+  }
+}
 @media (max-width:20em) {
   .button {
     padding-left: .625rem
@@ -831,11 +878,23 @@ body::after {
   .subtitle {
     font-size: 1.875rem
   }
+  .page__benefits {
+    margin-bottom: 4.375rem
+  }
   .page__steps {
     margin-bottom: 3.125rem
   }
   .page__info {
     margin-bottom: 3.125rem
+  }
+  .page__courses {
+    margin-bottom: 3.125rem
+  }
+  .benefits__item {
+    gap: .625rem
+  }
+  .benefits__item {
+    padding: .9375rem
   }
   .item-steps {
     padding: .625rem
@@ -866,6 +925,11 @@ body::after {
   }
   .popup__subtitle {
     margin-bottom: 1.875rem
+  }
+}
+@media (max-width:105.625em) {
+  .benefits__list {
+    grid-template-columns: repeat(2,1fr)
   }
 }
 @media (max-width:80.3125em) {
@@ -951,6 +1015,9 @@ body::after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  .benefits__list {
+    grid-template-columns: auto
+  }
   .courses__list {
     grid-template-columns: auto
   }
@@ -958,6 +1025,11 @@ body::after {
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
+  }
+}
+@media (max-width:29.99875em) {
+  .benefits__item {
+    grid-template-columns: 3.125rem auto
   }
 }
 @media (min-width:20em)and (max-width:105.625em) {
@@ -976,11 +1048,23 @@ body::after {
   .subtitle {
     font-size: clamp(1.875rem ,.9990875912rem + 4.3795620438vw ,5.625rem)
   }
+  .page__benefits {
+    margin-bottom: clamp(4.375rem ,3.0611313869rem + 6.5693430657vw ,10rem)
+  }
   .page__steps {
     margin-bottom: clamp(3.125rem ,1.9571167883rem + 5.8394160584vw ,8.125rem)
   }
   .page__info {
     margin-bottom: clamp(3.125rem ,1.9571167883rem + 5.8394160584vw ,8.125rem)
+  }
+  .page__courses {
+    margin-bottom: clamp(3.125rem ,1.9571167883rem + 5.8394160584vw ,8.125rem)
+  }
+  .benefits__item {
+    gap: clamp(.625rem ,.5520072993rem + .3649635036vw ,.9375rem)
+  }
+  .benefits__item {
+    padding: clamp(.9375rem ,.8645072993rem + .3649635036vw ,1.25rem)
   }
   .item-steps {
     padding: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
@@ -1011,6 +1095,11 @@ body::after {
   }
   .popup__subtitle {
     margin-bottom: clamp(1.875rem ,1.5830291971rem + 1.4598540146vw ,3.125rem)
+  }
+}
+@media (min-width:30em)and (max-width:105.625em) {
+  .benefits__image {
+    width: clamp(3.125rem ,1.3894628099rem + 5.7851239669vw ,7.5rem)
   }
 }
 @media (max-width:80.3125em)and (min-width:105.625em) {
