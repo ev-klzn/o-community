@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240913080936">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240913121203">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,38 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
+				<a href="#" data-goto-header data-goto=".hero" class="header__logo">
+					<img class="header__logo-img ibg ibg--contain" src="img/icons/logo.webp " alt="logo" />
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto-header data-goto=".courses" class="menu__item">
+								<a class="menu__link" href="#">courses</a>
+							</li>
+							<li data-goto-header data-goto=".steps" class="menu__item">
+								<a class="menu__link" href="#">how it works</a>
+							</li>
+							<li data-goto-header data-goto=".feedback" class="menu__item">
+								<a class="menu__link" href="#">feedback</a>
+							</li>
+							<li data-goto-header data-goto=".contact" class="menu__item">
+								<a class="menu__link" href="#">contacts</a>
+							</li>
+							<li class="menu__item">
+								<ul class="language-switcher">
+									<li><a class="menu__link" href="#">EN</a></li>
+									<!-- <li><a class="menu__link" href="#">РУС</a></li> -->
+									<!-- <li><a class="menu__link" href="#">ESP</a></li> -->
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="icon-menu"><span></span></button>
 			</div>
 		</header>
+
 		<main class="page">
 			<section class="page__hero hero">
 				<div class="hero__container">
@@ -45,35 +75,135 @@
 								</button>
 							</div>
 						</div>
-						<div class="hero__images">
-							<img class="hero__image ibg" src="img/1.webp" alt="Image" />
-							<img class="hero__image ibg" src="img/1.webp" alt="Image" />
-						</div>
+						<ul class="hero__more">
+							<!-- <img class="hero__image ibg" src="img/1.webp" alt="Image" /> -->
+							<!-- <img class="hero__image ibg" src="img/1.webp" alt="Image" /> -->
+							<li class="hero__item">
+								<img class="hero__item-image ibg" src="img/hero-clock.webp" alt="Image" />
+								<div class="hero__item-body">
+									<h3 class="hero__item-title">training format</h3>
+									<div class="hero__item-about">
+										<img class="hero__item-icon ibg" src="img/icons/hero-right.svg" alt="Image" />
+										<div class="hero__item-description">online</div>
+									</div>
+								</div>
+							</li>
+							<li class="hero__item">
+								<img class="hero__item-image ibg" src="img/hero-clock.webp" alt="Image" />
+								<div class="hero__item-body">
+									<h3 class="hero__item-title">course duration</h3>
+									<div class="hero__item-about">
+										<img class="hero__item-icon ibg" src="img/icons/hero-right.svg" alt="Image" />
+										<div class="hero__item-description">4-12 weeks</div>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
-			<div class="page__benefits benefits">
-				<div class="benefits__container">
-					<div class="benefits__list">
-						<div class="benefits__item">
-							<img class="benefits__image ibg" src="img/benefit.webp" alt="Image" />
-							<div class="benefits__title">Individual approach</div>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__image ibg" src="img/benefit.webp" alt="Image" />
-							<div class="benefits__title">Support 24/7</div>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__image ibg" src="img/benefit.webp" alt="Image" />
-							<div class="benefits__title">Qualified teachers</div>
-						</div>
-						<div class="benefits__item">
-							<img class="benefits__image ibg" src="img/benefit.webp" alt="Image" />
-							<div class="benefits__title">Modern methods</div>
-						</div>
+			<div class="page__info info">
+				<div class="info__wrap">
+					<div class="info__items marque">
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+					</div>
+					<div class="info__items marque">
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
+						<div class="info__item">start<span> group</span></div>
+						<div class="info__item">individual plan<span> daily</span></div>
 					</div>
 				</div>
 			</div>
+			<!-- <div class="page__benefits benefits">
+          <div class="benefits__container">
+            <div class="benefits__list">
+              <div class="benefits__item">
+                <img
+                  class="benefits__image ibg"
+                  src="img/benefit.webp"
+                  alt="Image" />
+                <div class="benefits__title">Individual approach</div>
+              </div>
+              <div class="benefits__item">
+                <img
+                  class="benefits__image ibg"
+                  src="img/benefit.webp"
+                  alt="Image" />
+                <div class="benefits__title">Support 24/7</div>
+              </div>
+              <div class="benefits__item">
+                <img
+                  class="benefits__image ibg"
+                  src="img/benefit.webp"
+                  alt="Image" />
+                <div class="benefits__title">Qualified teachers</div>
+              </div>
+              <div class="benefits__item">
+                <img
+                  class="benefits__image ibg"
+                  src="img/benefit.webp"
+                  alt="Image" />
+                <div class="benefits__title">Modern methods</div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 			<section class="page__steps steps">
 				<div class="steps__container">
 					<h2 class="steps__title title title--center">
@@ -278,7 +408,7 @@
 							</div>
 							<div class="item-courses__actions">
 								<button type="submit" class="item-courses__button button">
-									ready to study
+									to study
 								</button>
 								<a href="#" data-popup="#popup-beginner" class="item-courses__button item-courses__button--expanded button button--transparent">
 									Expanded information
@@ -611,7 +741,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240913080936"></script>
+	<script src="js/app.min.js?_v=20240913121203"></script>
 </body>
 
 </html>
