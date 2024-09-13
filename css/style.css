@@ -125,9 +125,6 @@ body {
 .button--transparent {
   background-color: rgba(0,0,0,0)
 }
-.button--transparent:hover {
-  background-color: #20acf5
-}
 .button--fw {
   width: 100%
 }
@@ -740,14 +737,14 @@ body::after {
   }
   .item-steps:nth-child(odd):not(:last-child)::before {
     height: 14.0625rem;
-    background: url(img/icons/right.svg) right no-repeat;
+    background: url(../img/right.svg) right no-repeat;
     top: 20%;
     right: -31.25rem
   }
   .item-steps:nth-child(even):not(:last-child)::before {
     height: 14.0625rem;
     top: 20%;
-    background: url(img/icons/left.svg) left no-repeat;
+    background: url(../img/icons/left.svg) left no-repeat;
     left: -31.25rem
   }
 }
@@ -874,7 +871,7 @@ body::after {
 @media (max-width:80.3125em) {
   .steps__list {
     gap: 7.5rem;
-    background: url(img/icons/down.svg) center center repeat-y
+    background: url(../img/icons/down.svg) center center repeat-y
   }
 }
 @media (max-width:80.3125em)and (max-width:20em) {
@@ -1057,5 +1054,9 @@ body::after {
 @media (any-hover:hover) {
   .button:hover {
     background-color: rgba(0,0,0,0)
+  }
+  .button--transparent:hover {
+    background-color: rgba(0,0,0,0);
+    background-color: #20acf5
   }
 }
