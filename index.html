@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240916134254">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240916140655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +22,21 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li data-goto-header data-goto=".courses" class="menu__item">
-								<a class="menu__link" href="#">courses</a>
+							<li data-goto-header data-goto=".hero" class="menu__item">
+								<a class="menu__link" href="#">contact</a>
 							</li>
 							<li data-goto-header data-goto=".steps" class="menu__item">
 								<a class="menu__link" href="#">how it works</a>
 							</li>
+							<li data-goto-header data-goto=".courses" class="menu__item">
+								<a class="menu__link" href="#">courses</a>
+							</li>
 							<li data-goto-header data-goto=".feedback" class="menu__item">
 								<a class="menu__link" href="#">feedback</a>
 							</li>
-							<li data-goto-header data-goto=".hero" class="menu__item">
-								<a class="menu__link" href="#">contacts</a>
+
+							<li data-goto-header data-goto=".qa" class="menu__item">
+								<a class="menu__link" href="#">FAQ</a>
 							</li>
 							<!-- <li class="menu__item">
             <ul class="language-switcher">
@@ -67,10 +71,10 @@
 								</p>
 							</div>
 							<div class="hero__actions">
-								<button class="button">Reserve a spot</button>
-								<button class="button button--transparent">
+								<a data-goto-header data-goto=".courses" href="#" class="button">Reserve a spot</a>
+								<a href="#" id="popup" class="button button--transparent">
 									get a consultation
-								</button>
+								</a>
 							</div>
 						</div>
 						<ul class="hero__more">
@@ -393,7 +397,7 @@
 							</div>
 							<div class="item-courses__actions">
 								<button type="submit" class="item-courses__button button">
-									to study
+									ready to study
 								</button>
 								<a href="#" data-popup="#popup-beginner" class="item-courses__button item-courses__button--expanded button button--transparent">
 									Expanded information
@@ -1454,7 +1458,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240916134254"></script>
+	<script src="js/app.min.js?_v=20240916140655"></script>
 </body>
 
 </html>
