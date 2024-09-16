@@ -1052,7 +1052,8 @@ body::after {
   column-gap: 1.25rem;
   row-gap: 1.6875rem;
   grid-template-columns: repeat(2,1fr);
-  margin-bottom: 1.6875rem
+  margin-bottom: 1.6875rem;
+  grid-auto-rows: 1fr
 }
 .contact__input {
   border-radius: .5rem;
@@ -1069,12 +1070,16 @@ body::after {
   text-align: center
 }
 .contact .input {
-  padding: 1.25rem;
   border-radius: .5rem!important
 }
 .form {
   display: flex;
   flex-direction: column
+}
+textarea {
+  padding-top: 1.25rem!important;
+  padding-left: 1.25rem!important;
+  padding-right: 1.25rem!important
 }
 .swiper {
   overflow: hidden
