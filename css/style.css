@@ -280,7 +280,9 @@ body::after {
   color: #dfe5e9;
   font-size: 28px;
   font-weight: 800;
-  text-transform: uppercase
+  text-transform: uppercase;
+  padding-right: 1.875rem;
+  line-height: 1.3
 }
 .spollers__title::-webkit-details-marker,
 .spollers__title::marker {
@@ -295,7 +297,7 @@ body::after {
   content: "";
   position: absolute;
   right: 0;
-  top: 0;
+  top: 20%;
   display: inline-block;
   background: url(../img/icons/plus.svg) 0 0 no-repeat;
   background-size: cover;
@@ -1022,6 +1024,9 @@ body::after {
 .item-feedback__image {
   aspect-ratio: 24/24
 }
+.qa__title {
+  text-transform: uppercase
+}
 .swiper {
   overflow: hidden
 }
@@ -1123,6 +1128,9 @@ body::after {
   }
   .spollers__item {
     padding-bottom: 1.875rem
+  }
+  .spollers__title {
+    font-size: 1.75rem
   }
   .title {
     font-size: 7.5rem
@@ -1346,6 +1354,9 @@ body::after {
   }
   .spollers__item {
     padding-bottom: .9375rem
+  }
+  .spollers__title {
+    font-size: 1.25rem
   }
   .title {
     font-size: 2.25rem
@@ -1738,6 +1749,9 @@ body::after {
   }
   .spollers__item {
     padding-bottom: clamp(.9375rem ,.7185218978rem + 1.0948905109vw ,1.875rem)
+  }
+  .spollers__title {
+    font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
   .title {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
