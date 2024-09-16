@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240916143801">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240916151407">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1477,10 +1477,12 @@
 									help you figure out if our courses are right for you
 								</div>
 								<form netlify id="contact" name="contact" class="form">
-									<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Name *" class="contact__input input" />
-									<input data-validate required type="text" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
-									<input type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Mobile number" class="contact__input input" />
-									<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Message *"></textarea>
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Name *" class="contact__input input" />
+										<input data-validate required type="text" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Mobile number" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Message *"></textarea>
+									</div>
 									<button type="submit" class="contact__button button">
 										get a consultation
 									</button>
@@ -1492,7 +1494,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240916143801"></script>
+	<script src="js/app.min.js?_v=20240916151407"></script>
 </body>
 
 </html>
