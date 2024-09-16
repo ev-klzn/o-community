@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240916151407">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240916170125">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,13 +71,15 @@
 								</p>
 							</div>
 							<div class="hero__actions">
-								<a data-goto-header data-goto=".courses" href="#" class="button">Reserve a spot</a>
-								<a href="#" data-popup="#popup-form" class="button button--transparent">
-									get a consultation
-								</a>
+								<div class="hero__wrapper">
+									<a data-goto-header data-goto=".courses" href="#" class="button">Reserve a spot</a>
+									<a href="#" data-popup="#popup-form" class="button button--transparent">
+										get a consultation
+									</a>
+								</div>
 							</div>
 						</div>
-						<ul class="hero__more">
+						<ul data-da=".hero__actions,991.98,2" class="hero__more">
 							<li class="hero__item">
 								<img class="hero__item-image ibg" src="img/hero-book.webp" alt="Image" />
 								<div class="hero__item-body">
@@ -1479,10 +1481,11 @@
 								<form netlify id="contact" name="contact" class="form">
 									<div class="contact__wrapper">
 										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Name *" class="contact__input input" />
-										<input data-validate required type="text" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
-										<input type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Mobile number" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input ^\d{10,12}$ type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Phone" class="contact__input input" />
 										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Message *"></textarea>
 									</div>
+
 									<button type="submit" class="contact__button button">
 										get a consultation
 									</button>
@@ -1494,7 +1497,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240916151407"></script>
+	<script src="js/app.min.js?_v=20240916170125"></script>
 </body>
 
 </html>

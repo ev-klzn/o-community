@@ -520,9 +520,17 @@ body::after {
   line-height: 1.4
 }
 .hero__actions {
-  display: flex;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  row-gap: 2.5rem
+}
+.hero__wrapper {
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap
+  align-items: center;
+  grid-template-columns: auto auto
 }
 .hero__more {
   display: grid;
@@ -533,7 +541,6 @@ body::after {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  max-width: 29.375rem;
   border-radius: .5rem;
   border: 1px solid #20acf5;
   background: #000b12;
@@ -1104,6 +1111,9 @@ body::after {
   .hero__box {
     max-width: 42.5rem
   }
+  .hero__more {
+    max-width: 31.25rem
+  }
 }
 @media (min-width:80.3125em) {
   .steps__list {
@@ -1138,10 +1148,10 @@ body::after {
 }
 @media (min-width:105.625em) {
   .button {
-    padding-left: 2.5rem
+    padding-left: 1.875rem
   }
   .button {
-    padding-right: 2.5rem
+    padding-right: 1.875rem
   }
   .menu__list {
     -webkit-column-gap: 3.125rem;
@@ -1223,7 +1233,17 @@ body::after {
     margin-bottom: 6.25rem
   }
   .hero__actions {
-    gap: 2.5rem
+    -webkit-column-gap: .625rem;
+    -moz-column-gap: .625rem;
+    column-gap: .625rem
+  }
+  .hero__wrapper {
+    row-gap: 2.5rem
+  }
+  .hero__wrapper {
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem
   }
   .hero__more {
     gap: 2.5rem
@@ -1444,7 +1464,17 @@ body::after {
     margin-bottom: 3.75rem
   }
   .hero__actions {
-    gap: .9375rem
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem
+  }
+  .hero__wrapper {
+    row-gap: .9375rem
+  }
+  .hero__wrapper {
+    -webkit-column-gap: .0000000625rem;
+    -moz-column-gap: .0000000625rem;
+    column-gap: .0000000625rem
   }
   .hero__more {
     gap: .9375rem
@@ -1602,9 +1632,20 @@ body::after {
   .hero__body {
     grid-template-columns: auto
   }
+  .hero__actions {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr
+  }
+  .hero__wrapper {
+    justify-content: stretch;
+    grid-template-columns: auto
+  }
+  .hero__wrapper .button {
+    width: 100%
+  }
   .hero__more {
-    grid-template-columns: auto auto;
-    justify-content: center
+    grid-template-columns: auto;
+    justify-content: stretch
   }
   .hero__item-image {
     width: 3.75rem;
@@ -1717,11 +1758,15 @@ body::after {
     gap: 0;
     grid-template-columns: auto 1fr auto auto
   }
-  .hero__actions .button {
-    width: 100%
+  .hero__actions {
+    grid-template-columns: auto
   }
   .hero__more {
     grid-template-columns: auto
+  }
+  .hero__item {
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
   }
   .benefits__list {
     grid-template-columns: auto
@@ -1730,6 +1775,9 @@ body::after {
     grid-template-columns: auto
   }
   .feedback__list {
+    grid-template-columns: auto
+  }
+  .contact__wrapper {
     grid-template-columns: auto
   }
 }
@@ -1744,10 +1792,6 @@ body::after {
   }
 }
 @media (max-width:29.99875em) {
-  .hero__item {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
-  }
   .benefits__item {
     grid-template-columns: 3.125rem auto;
     margin-left: -.9375rem;
@@ -1764,10 +1808,10 @@ body::after {
 }
 @media (min-width:20em)and (max-width:105.625em) {
   .button {
-    padding-left: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
+    padding-left: clamp(.625rem ,.3330291971rem + 1.4598540146vw ,1.875rem)
   }
   .button {
-    padding-right: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
+    padding-right: clamp(.625rem ,.3330291971rem + 1.4598540146vw ,1.875rem)
   }
   .menu__item {
     font-size: clamp(1.03125rem ,.9801551095rem + .2554744526vw ,1.25rem)
@@ -1839,7 +1883,17 @@ body::after {
     margin-bottom: clamp(3.75rem ,3.1660583942rem + 2.9197080292vw ,6.25rem)
   }
   .hero__actions {
-    gap: clamp(.9375rem ,.5725364964rem + 1.8248175182vw ,2.5rem)
+    -webkit-column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem);
+    -moz-column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem);
+    column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem)
+  }
+  .hero__wrapper {
+    row-gap: clamp(.9375rem ,.5725364964rem + 1.8248175182vw ,2.5rem)
+  }
+  .hero__wrapper {
+    -webkit-column-gap: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem);
+    -moz-column-gap: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem);
+    column-gap: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem)
   }
   .hero__more {
     gap: clamp(.9375rem ,.5725364964rem + 1.8248175182vw ,2.5rem)
