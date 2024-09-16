@@ -116,11 +116,14 @@ body {
   padding-top: .9375rem;
   padding-bottom: .9375rem;
   transition: all .3s;
-  background-color: #20acf5;
-  border: 1px solid #20acf5;
+  background-color: #0e79b7;
+  border: 1px solid #0e79b7;
   text-transform: uppercase;
   text-align: center;
   justify-content: center
+}
+.button:active {
+  background-color: #00518f
 }
 .button--transparent {
   background-color: rgba(0,0,0,0)
@@ -767,7 +770,8 @@ body::after {
 }
 .courses__list {
   display: grid;
-  grid-template-columns: repeat(3,1fr)
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem
 }
 .item-courses {
   border-radius: .5rem;
@@ -1212,9 +1216,6 @@ body::after {
   .item-steps__title {
     font-size: 2.625rem
   }
-  .courses__list {
-    gap: 1.25rem
-  }
   .item-courses {
     padding: 1.875rem
   }
@@ -1426,9 +1427,6 @@ body::after {
   }
   .item-steps__title {
     font-size: 1.875rem
-  }
-  .courses__list {
-    gap: .625rem
   }
   .item-courses {
     padding: .625rem
@@ -1822,9 +1820,6 @@ body::after {
   .item-steps__title {
     font-size: clamp(1.875rem ,1.6998175182rem + .8759124088vw ,2.625rem)
   }
-  .courses__list {
-    gap: clamp(.625rem ,.4790145985rem + .7299270073vw ,1.25rem)
-  }
   .item-courses {
     padding: clamp(.625rem ,.3330291971rem + 1.4598540146vw ,1.875rem)
   }
@@ -2001,13 +1996,14 @@ body::after {
 }
 @media (any-hover:hover) {
   .button:hover {
-    background-color: rgba(0,0,0,0)
+    box-shadow: 0 0 20px 6px rgba(32,172,245,.7)
   }
   .button--transparent:hover {
+    border: 1px solid #36a1df;
     background-color: rgba(0,0,0,0);
-    background-color: #20acf5
+    box-shadow: 0 0 20px 6px rgba(32,172,245,.7)
   }
   .menu__link:hover {
-    color: #f59820
+    color: #20acf5
   }
 }
