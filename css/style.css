@@ -315,7 +315,9 @@ body::after {
   background: url(../img/icons/minus.svg) 0 0 no-repeat;
   background-size: cover;
   width: 24px;
-  height: 24px
+  height: 24px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
 .spollers__body {
   font-weight: 400;
