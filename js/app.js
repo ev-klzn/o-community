@@ -3894,6 +3894,7 @@
             observer: true,
             observeParents: true,
             slidesPerView: 1,
+            spaceBetween: 15,
             autoHeight: true,
             speed: 1500,
             loop: true,

@@ -1525,10 +1525,10 @@ body::after {
     margin-bottom: 1.875rem
   }
   .feedback__list {
-    padding-left: .0000000625rem
+    padding-left: .9375rem
   }
   .feedback__list {
-    padding-right: .0000000625rem
+    padding-right: .9375rem
   }
   .item-feedback {
     padding-top: .9375rem
@@ -1764,10 +1764,6 @@ body::after {
   .hero__more {
     grid-template-columns: auto
   }
-  .hero__item {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
-  }
   .benefits__list {
     grid-template-columns: auto
   }
@@ -1776,6 +1772,9 @@ body::after {
   }
   .feedback__list {
     grid-template-columns: auto
+  }
+  .item-feedback:nth-child(even) {
+    display: none
   }
   .contact__wrapper {
     grid-template-columns: auto
@@ -1793,17 +1792,7 @@ body::after {
 }
 @media (max-width:29.99875em) {
   .benefits__item {
-    grid-template-columns: 3.125rem auto;
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
-  }
-  .item-steps {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
-  }
-  .item-courses {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
+    grid-template-columns: 3.125rem auto
   }
 }
 @media (min-width:20em)and (max-width:105.625em) {
@@ -1944,10 +1933,10 @@ body::after {
     margin-bottom: clamp(1.875rem ,1.5830291971rem + 1.4598540146vw ,3.125rem)
   }
   .feedback__list {
-    padding-left: clamp(.0000000625rem ,-.8029196309rem + 4.0145984672vw ,3.4375rem)
+    padding-left: clamp(.9375rem ,.3535583942rem + 2.9197080292vw ,3.4375rem)
   }
   .feedback__list {
-    padding-right: clamp(.0000000625rem ,-.8029196309rem + 4.0145984672vw ,3.4375rem)
+    padding-right: clamp(.9375rem ,.3535583942rem + 2.9197080292vw ,3.4375rem)
   }
   .item-feedback {
     padding-top: clamp(.9375rem ,.7039233577rem + 1.1678832117vw ,1.9375rem)
