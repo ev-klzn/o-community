@@ -262,6 +262,8 @@ body::after {
   visibility: visible
 }
 .spollers {
+  border: 1px solid #20acf5;
+  box-shadow: 0 0 40px 0 rgba(32,172,245,.7);
   max-width: 73.75rem;
   display: grid;
   background-color: #000b12;
