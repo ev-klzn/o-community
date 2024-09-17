@@ -738,39 +738,39 @@ body::after {
   aspect-ratio: 109/52;
   -webkit-animation: opacity 5s linear infinite;
   animation: opacity 5s linear infinite;
-  -webkit-animation: right 2s linear infinite;
-  animation: right 2s linear infinite
+  -webkit-animation: right 3s linear infinite;
+  animation: right 3s linear infinite
 }
 @-webkit-keyframes right {
   0% {
-    opacity: 1;
+    opacity: .3;
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
   50% {
-    opacity: .3;
+    opacity: 1;
     -webkit-transform: translateX(1.25rem);
     transform: translateX(1.25rem)
   }
   100% {
-    opacity: 1;
+    opacity: .3;
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
 }
 @keyframes right {
   0% {
-    opacity: 1;
+    opacity: .3;
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
   50% {
-    opacity: .3;
+    opacity: 1;
     -webkit-transform: translateX(1.25rem);
     transform: translateX(1.25rem)
   }
   100% {
-    opacity: 1;
+    opacity: .3;
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
@@ -862,6 +862,7 @@ body::after {
 }
 .steps__title {
   text-transform: uppercase;
+  position: relative;
   opacity: 0;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
@@ -890,24 +891,15 @@ body::after {
   box-shadow: 0 0 40px 0 rgba(32,172,245,.7);
   display: grid;
   gap: 1.25rem;
-  z-index: 15;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s,-webkit-transform .5s
-}
-.item-steps._watcher-view {
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0)
+  z-index: 15
 }
 .item-steps::after,
 .item-steps::before {
   content: "";
   position: absolute;
   z-index: 0;
-  -webkit-animation: opacity 5s linear infinite;
-  animation: opacity 5s linear infinite
+  -webkit-animation: opacity 3s linear infinite;
+  animation: opacity 3s linear infinite
 }
 @-webkit-keyframes opacity {
   0% {
@@ -931,8 +923,38 @@ body::after {
     opacity: 1
   }
 }
+.item-steps:nth-child(odd) {
+  -webkit-transform: translate(-100%,0);
+  transform: translate(-100%,0);
+  opacity: 0;
+  transition: opacity .2s,-webkit-transform .2s;
+  transition: opacity .2s,transform .2s;
+  transition: opacity .2s,transform .2s,-webkit-transform .2s
+}
+.item-steps:nth-child(odd)._watcher-view {
+  transition: opacity .3s .3s,-webkit-transform .3s .3s;
+  transition: opacity .3s .3s,transform .3s .3s;
+  transition: opacity .3s .3s,transform .3s .3s,-webkit-transform .3s .3s;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  opacity: 1
+}
 .item-steps:nth-child(even) {
-  align-self: flex-end
+  align-self: flex-end;
+  -webkit-transform: translate(100%,0);
+  transform: translate(100%,0);
+  opacity: 0;
+  transition: opacity .2s,-webkit-transform .2s;
+  transition: opacity .2s,transform .2s;
+  transition: opacity .2s,transform .2s,-webkit-transform .2s
+}
+.item-steps:nth-child(even)._watcher-view {
+  transition: opacity .5s .3s,-webkit-transform .5s .3s;
+  transition: opacity .5s .3s,transform .5s .3s;
+  transition: opacity .5s .3s,transform .5s .3s,-webkit-transform .5s .3s;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  opacity: 1
 }
 .item-steps__label {
   color: #fff;
@@ -2018,8 +2040,53 @@ textarea {
     display: none
   }
   .steps__list {
-    gap: 7.5rem;
-    background: url(../img/icons/down.svg) center center repeat-y
+    gap: 7.5rem
+  }
+  .steps__list._watcher-view::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icons/down.svg) center center repeat-y;
+    width: 1.5625rem;
+    top: 14%;
+    left: 48%;
+    height: 85%;
+    opacity: 0;
+    -webkit-animation: down 3s linear 3s infinite;
+    animation: down 3s linear 3s infinite
+  }
+  @-webkit-keyframes down {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateY(1.25rem);
+      transform: translateY(1.25rem)
+    }
+    100% {
+      opacity: .1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+  }
+  @keyframes down {
+    0% {
+      opacity: .1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateY(1.25rem);
+      transform: translateY(1.25rem)
+    }
+    100% {
+      opacity: .1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
   }
 }
 @media (max-width:80.3125em)and (max-width:20em) {
