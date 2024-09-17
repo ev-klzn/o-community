@@ -183,9 +183,9 @@ textarea.input {
 .menu__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
-  row-gap: .1875rem;
-  align-items: end
+  row-gap: .1875rem
 }
 .menu__item {
   display: inline-block
@@ -511,8 +511,6 @@ body::after {
 }
 .language-switcher {
   border-radius: 4px;
-  padding-left: .3125rem;
-  padding-right: .3125rem;
   border: 1px solid transparent;
   transition: all .3s
 }
@@ -575,6 +573,9 @@ body::after {
 .hero__title {
   font-weight: 900;
   line-height: 1.3
+}
+.hero__title span {
+  color: #20acf5
 }
 .hero__body {
   display: grid;
@@ -1162,6 +1163,36 @@ textarea {
   padding-top: 1.25rem!important;
   padding-left: 1.25rem!important;
   padding-right: 1.25rem!important
+}
+.documents {
+  padding-top: 7.5rem;
+  padding-bottom: 3.125rem;
+  color: #fff
+}
+.documents__title {
+  text-transform: uppercase;
+  font-size: 1.625rem
+}
+.documents__title:not(:last-child) {
+  margin-bottom: .9375rem
+}
+.documents__subtitle {
+  text-transform: uppercase
+}
+.documents__subtitle:not(:last-child) {
+  margin-bottom: .9375rem
+}
+.documents__list {
+  display: grid;
+  gap: 2.5rem
+}
+.documents__item-title {
+  text-transform: uppercase;
+  margin-bottom: 1.5625rem
+}
+.documents__subitem {
+  display: grid;
+  gap: .625rem
 }
 .swiper {
   overflow: hidden
@@ -1828,6 +1859,7 @@ textarea {
   }
   .menu__list {
     justify-content: start;
+    align-items: end;
     flex-direction: column
   }
   .menu__link {
