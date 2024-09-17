@@ -1,13 +1,6 @@
 (() => {
     "use strict";
     const modules_flsModules = {};
-    function addLoadedClass() {
-        if (!document.documentElement.classList.contains("loading")) window.addEventListener("load", (function() {
-            setTimeout((function() {
-                document.documentElement.classList.add("loaded");
-            }), 0);
-        }));
-    }
     function getHash() {
         if (location.hash) return location.hash.replace("#", "");
     }
@@ -4167,7 +4160,6 @@
     const da = new DynamicAdapt("max");
     da.init();
     window["FLS"] = false;
-    addLoadedClass();
     menuInit();
     spollers();
     formFieldsInit({
