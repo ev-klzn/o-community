@@ -536,7 +536,14 @@ body::after {
   aspect-ratio: 205/64
 }
 .footer__pay {
-  height: 2.5rem
+  height: 2.5rem;
+  width: auto
+}
+.footer__image-mc {
+  aspect-ratio: 65/39
+}
+.footer__image-visa {
+  aspect-ratio: 68/21
 }
 .footer__item {
   width: 12.8125rem
