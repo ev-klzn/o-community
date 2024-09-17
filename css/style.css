@@ -891,18 +891,15 @@ body::after {
   display: grid;
   gap: 1.25rem;
   z-index: 15;
-  opacity: 0;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
-  transition: opacity .5s,-webkit-transform .5s;
-  transition: transform .5s,opacity .5s;
-  transition: transform .5s,opacity .5s,-webkit-transform .5s
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s,-webkit-transform .5s
 }
 .item-steps._watcher-view {
-  transition-delay: .1s;
   -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  opacity: 1
+  transform: translate(0,0)
 }
 .item-steps::after,
 .item-steps::before {
