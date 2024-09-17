@@ -3896,19 +3896,19 @@
             slidesPerView: 1,
             spaceBetween: 15,
             autoHeight: true,
-            speed: 1500,
+            speed: 1e3,
             loop: true,
             lazy: true,
             effect: "fade",
             autoplay: {
-                delay: 6e3,
+                delay: 12e3,
                 disableOnInteraction: false
             },
             loop: true,
             lazy: true,
             effect: "fade",
             autoplay: {
-                delay: 3e3,
+                delay: 12e3,
                 disableOnInteraction: false
             },
             breakpoints: {},

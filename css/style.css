@@ -1194,6 +1194,10 @@ textarea {
   display: grid;
   gap: .625rem
 }
+.documents__subitem-text {
+  display: grid;
+  gap: .3125rem
+}
 .swiper {
   overflow: hidden
 }
