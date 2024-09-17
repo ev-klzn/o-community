@@ -574,7 +574,7 @@ body::after {
 }
 .hero__title {
   font-weight: 900;
-  margin-bottom: .625rem
+  line-height: 1.3
 }
 .hero__body {
   display: grid;
