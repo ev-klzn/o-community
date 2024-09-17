@@ -365,7 +365,8 @@ body::after {
   object-fit: contain
 }
 .title {
-  font-weight: 900
+  font-weight: 900;
+  line-height: 1.3
 }
 .title span {
   color: #20acf5
@@ -374,6 +375,7 @@ body::after {
   margin-bottom: .625rem
 }
 .subtitle {
+  line-height: 1.3;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase
@@ -498,6 +500,21 @@ body::after {
 .header__logo-img {
   flex: 0 0 12.8125rem;
   aspect-ratio: 205/40
+}
+.menu__link {
+  border: 1px solid transparent
+}
+.menu__link--switcher {
+  transition: all .3s;
+  padding-left: .3125rem;
+  padding-right: .3125rem
+}
+.language-switcher {
+  border-radius: 4px;
+  padding-left: .3125rem;
+  padding-right: .3125rem;
+  border: 1px solid transparent;
+  transition: all .3s
 }
 .footer__top {
   display: grid;
@@ -971,6 +988,14 @@ body::after {
   display: grid;
   gap: .9375rem
 }
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+.popup__close {
+  margin-bottom: .9375rem
+}
 .popup__label {
   color: #fff;
   font-size: 1.875rem;
@@ -1013,8 +1038,7 @@ body::after {
   max-width: 112.5rem
 }
 .feedback__title {
-  text-transform: uppercase;
-  margin-bottom: .625rem
+  text-transform: uppercase
 }
 .feedback__list {
   display: grid;
@@ -1091,6 +1115,12 @@ body::after {
 }
 .qa__title {
   text-transform: uppercase
+}
+.popup__content {
+  border-radius: 8px;
+  border: 1px solid #20acf5;
+  background: #000b12;
+  box-shadow: 0 0 40px 0 rgba(32,172,245,.7)
 }
 .contact__label {
   color: #dfe5e9;
@@ -1367,6 +1397,9 @@ textarea {
   .popup__subtitle {
     margin-bottom: 3.125rem
   }
+  .feedback__title {
+    margin-bottom: .625rem
+  }
   .feedback__list {
     padding-left: 3.4375rem
   }
@@ -1495,7 +1528,7 @@ textarea {
     font-size: 2.25rem
   }
   .title {
-    margin-bottom: 3.125rem
+    margin-bottom: 1.875rem
   }
   .subtitle {
     font-size: 1.875rem
@@ -1602,6 +1635,9 @@ textarea {
   }
   .popup__subtitle {
     margin-bottom: 1.875rem
+  }
+  .feedback__title {
+    margin-bottom: -1.25rem
   }
   .feedback__list {
     padding-left: .9375rem
@@ -1926,7 +1962,7 @@ textarea {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
   }
   .title {
-    margin-bottom: clamp(3.125rem ,2.5410583942rem + 2.9197080292vw ,5.625rem)
+    margin-bottom: clamp(1.875rem ,.9990875912rem + 4.3795620438vw ,5.625rem)
   }
   .subtitle {
     font-size: clamp(1.875rem ,.9990875912rem + 4.3795620438vw ,5.625rem)
@@ -2033,6 +2069,9 @@ textarea {
   }
   .popup__subtitle {
     margin-bottom: clamp(1.875rem ,1.5830291971rem + 1.4598540146vw ,3.125rem)
+  }
+  .feedback__title {
+    margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
   }
   .feedback__list {
     padding-left: clamp(.9375rem ,.3535583942rem + 2.9197080292vw ,3.4375rem)
@@ -2195,6 +2234,9 @@ textarea {
   }
   .menu__link:hover {
     color: #20acf5
+  }
+  .language-switcher:hover {
+    border: 1px solid #20acf5
   }
   .footer__link:hover {
     color: #20acf5
