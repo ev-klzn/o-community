@@ -532,7 +532,22 @@ body::after {
 .language-switcher {
   border-radius: 4px;
   border: 1px solid transparent;
-  transition: all .3s
+  transition: all .3s;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: .1875rem;
+  justify-content: flex-end;
+  flex-direction: row-reverse
+}
+.language-switcher::before {
+  padding-right: .625rem;
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/menu-switch.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 10px
 }
 .footer__top {
   display: grid;
@@ -614,6 +629,7 @@ body::after {
   color: #20acf5
 }
 .hero__subtitle {
+  font-weight: 500;
   opacity: 0;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
@@ -663,7 +679,6 @@ body::after {
 }
 .hero__wrapper {
   display: grid;
-  justify-content: center;
   align-items: center;
   grid-template-columns: auto auto
 }
@@ -1154,10 +1169,28 @@ body::after {
 .item-courses__label:not(:last-child) {
   margin-bottom: 1.25rem
 }
+.item-courses__text {
+  display: grid;
+  gap: .4375rem;
+  color: #a9b9c3;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin-bottom: .9375rem
+}
 .item-courses__list {
   display: grid;
   gap: 1.875rem;
-  position: relative
+  position: relative;
+  margin-bottom: 1.25rem
+}
+.item-courses__value {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.3
+}
+.item-courses__value span {
+  color: #20acf5
 }
 .item-courses__item-title {
   display: inline-flex;
@@ -1189,6 +1222,7 @@ body::after {
 .item-courses__prices-items {
   display: flex;
   align-items: center;
+  gap: .625rem;
   justify-content: space-between;
   margin-bottom: 1.25rem
 }
@@ -1211,6 +1245,49 @@ body::after {
 .item-courses__actions {
   display: grid;
   gap: .9375rem
+}
+.item-courses__button {
+  opacity: 0;
+  -webkit-transform: translate(0,20%);
+  transform: translate(0,20%);
+  transition: opacity .3s,-webkit-transform .3s;
+  transition: opacity .3s,transform .3s;
+  transition: opacity .3s,transform .3s,-webkit-transform .3s
+}
+.item-courses__button._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.item-courses__button._watcher-view:nth-child(1) {
+  transition-delay: .2s
+}
+.item-courses__button._watcher-view:nth-child(2) {
+  transition-delay: .3s
+}
+.item-courses__button._watcher-view:nth-child(3) {
+  transition-delay: .4s
+}
+.item-courses__button._watcher-view:nth-child(4) {
+  transition-delay: .5s
+}
+.item-courses__button._watcher-view:nth-child(5) {
+  transition-delay: .6s
+}
+.item-courses__button._watcher-view:nth-child(6) {
+  transition-delay: .7s
+}
+.item-courses__button._watcher-view:nth-child(7) {
+  transition-delay: .8s
+}
+.item-courses__button._watcher-view:nth-child(8) {
+  transition-delay: .9s
+}
+.item-courses__button._watcher-view:nth-child(9) {
+  transition-delay: 1s
+}
+.item-courses__button._watcher-view:nth-child(10) {
+  transition-delay: 1.1s
 }
 .popup__content {
   display: flex;
@@ -1283,7 +1360,13 @@ body::after {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
   padding-left: 3.125rem;
-  padding-right: 3.125rem
+  padding-right: 3.125rem;
+  margin-bottom: 10.625rem
+}
+.feedback__action {
+  display: grid;
+  gap: 1.25rem;
+  justify-items: center
 }
 .item-feedback {
   position: relative;
@@ -1630,6 +1713,9 @@ textarea {
     font-size: 7.5rem
   }
   .hero__subtitle {
+    font-size: 4rem
+  }
+  .hero__subtitle {
     margin-bottom: 5rem
   }
   .hero__text {
@@ -1690,8 +1776,8 @@ textarea {
   .item-courses__schedule:not(:last-child) {
     margin-bottom: 2.5rem
   }
-  .item-courses__list {
-    margin-bottom: 2.5rem
+  .item-courses__value {
+    margin-bottom: 3.125rem
   }
   .item-courses__item-title {
     font-size: 1.75rem
@@ -1713,6 +1799,9 @@ textarea {
   }
   .feedback__list {
     gap: 2.5rem
+  }
+  .feedback__button {
+    margin-top: 3.125rem
   }
   .item-feedback {
     padding-top: 1.9375rem
@@ -1875,6 +1964,9 @@ textarea {
     font-size: 2.25rem
   }
   .hero__subtitle {
+    font-size: 2rem
+  }
+  .hero__subtitle {
     margin-bottom: 2.5rem
   }
   .hero__text {
@@ -1929,7 +2021,7 @@ textarea {
   .item-courses__schedule:not(:last-child) {
     margin-bottom: 1.875rem
   }
-  .item-courses__list {
+  .item-courses__value {
     margin-bottom: 1.875rem
   }
   .item-courses__item-title {
@@ -1949,6 +2041,9 @@ textarea {
   }
   .feedback__list {
     padding-right: .9375rem
+  }
+  .feedback__button {
+    margin-top: 2.5rem
   }
   .item-feedback {
     padding-top: .9375rem
@@ -2355,6 +2450,9 @@ textarea {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
   }
   .hero__subtitle {
+    font-size: clamp(2rem ,1.5328467153rem + 2.3357664234vw ,4rem)
+  }
+  .hero__subtitle {
     margin-bottom: clamp(2.5rem ,1.9160583942rem + 2.9197080292vw ,5rem)
   }
   .hero__text {
@@ -2409,8 +2507,8 @@ textarea {
   .item-courses__schedule:not(:last-child) {
     margin-bottom: clamp(1.875rem ,1.7290145985rem + .7299270073vw ,2.5rem)
   }
-  .item-courses__list {
-    margin-bottom: clamp(1.875rem ,1.7290145985rem + .7299270073vw ,2.5rem)
+  .item-courses__value {
+    margin-bottom: clamp(1.875rem ,1.5830291971rem + 1.4598540146vw ,3.125rem)
   }
   .item-courses__item-title {
     font-size: clamp(1.5rem ,1.4416058394rem + .2919708029vw ,1.75rem)
@@ -2429,6 +2527,9 @@ textarea {
   }
   .feedback__list {
     padding-right: clamp(.9375rem ,.3535583942rem + 2.9197080292vw ,3.4375rem)
+  }
+  .feedback__button {
+    margin-top: clamp(2.5rem ,2.3540145985rem + .7299270073vw ,3.125rem)
   }
   .item-feedback {
     padding-top: clamp(.9375rem ,.7039233577rem + 1.1678832117vw ,1.9375rem)
@@ -2594,5 +2695,8 @@ textarea {
   }
   .footer__copy-link:hover {
     color: #20acf5
+  }
+  .item-courses__button._watcher-view:hover {
+    transition: all .3s
   }
 }
