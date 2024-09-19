@@ -71,7 +71,9 @@ h6 {
   font-size: inherit
 }
 body {
-  background-color: #03000b
+  background-color: #03000b;
+  background-image: url(../img/bg03.webp);
+  background-size: cover
 }
 .lock body {
   overflow: hidden;
@@ -261,10 +263,10 @@ body::after {
   transition: transform .3s ease 0s;
   transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
   background-color: #03000b;
-  padding: 20px;
   width: 100%;
-  max-width: 900px;
-  border-radius: 20px
+  max-width: 1760px;
+  border-radius: 20px;
+  padding-top: 1.875rem
 }
 .lock .popup__content {
   visibility: visible
@@ -598,6 +600,7 @@ body::after {
   column-gap: 1.25rem;
   row-gap: .3125rem;
   justify-content: center;
+  font-size: .75rem;
   margin-bottom: 1.875rem
 }
 .footer__copy-link {
@@ -760,8 +763,8 @@ body::after {
   }
   50% {
     opacity: 1;
-    -webkit-transform: translateX(1.25rem);
-    transform: translateX(1.25rem)
+    -webkit-transform: translateX(1.375rem);
+    transform: translateX(1.375rem)
   }
   100% {
     opacity: .3;
@@ -777,8 +780,8 @@ body::after {
   }
   50% {
     opacity: 1;
-    -webkit-transform: translateX(1.25rem);
-    transform: translateX(1.25rem)
+    -webkit-transform: translateX(1.375rem);
+    transform: translateX(1.375rem)
   }
   100% {
     opacity: .3;
@@ -811,7 +814,7 @@ body::after {
 }
 .benefits__list {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 1.25rem
 }
 .benefits__item {
@@ -821,10 +824,11 @@ body::after {
   box-shadow: 0 0 40px 10px rgba(32,172,245,.7);
   display: grid;
   grid-template-columns: 7.5rem auto;
-  gap: .9375rem;
+  gap: .625rem;
   align-items: center;
   justify-items: center;
   opacity: 0;
+  line-height: 1.2;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
   transition: opacity .3s,-webkit-transform .3s;
@@ -848,6 +852,12 @@ body::after {
 .benefits__item._watcher-view:nth-child(4) {
   transition-delay: .5s
 }
+.benefits__item._watcher-view:nth-child(5) {
+  transition-delay: .6s
+}
+.benefits__item._watcher-view:nth-child(6) {
+  transition-delay: .7s
+}
 .benefits__image {
   aspect-ratio: 120/120;
   width: 7.5rem
@@ -855,7 +865,6 @@ body::after {
 .benefits__title {
   color: #fff;
   text-align: center;
-  font-size: 1.75rem;
   font-weight: 500;
   text-transform: uppercase
 }
@@ -1006,8 +1015,8 @@ body::after {
   color: #20acf5
 }
 .marque {
-  -webkit-animation: scroll 120s linear infinite;
-  animation: scroll 120s linear infinite
+  -webkit-animation: scroll 240s linear infinite;
+  animation: scroll 240s linear infinite
 }
 @-webkit-keyframes scroll {
   from {
@@ -1297,20 +1306,27 @@ body::after {
 .popup__close {
   margin-bottom: .9375rem
 }
+.popup__subtitle {
+  margin-bottom: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase
+}
 .popup__label {
   color: #fff;
   font-size: 1.875rem;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 1.9375rem
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem
 }
 .popup__list {
   display: grid;
-  gap: 1.875rem
+  gap: 1.875rem;
+  position: relative;
+  grid-template-columns: repeat(2,1fr);
+  align-items: start
 }
 .popup__title {
   color: #dfe5e9;
-  font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -1330,6 +1346,29 @@ body::after {
   background-size: cover;
   width: 24px;
   height: 24px
+}
+.popup__text {
+  display: grid;
+  gap: 1.25rem
+}
+.popup__text p {
+  color: #a9b9c3;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.4;
+  display: inline-flex;
+  align-self: center;
+  gap: .5rem;
+  justify-content: flex-end
+}
+.popup__text p::before {
+  content: "";
+  margin-top: .1875rem;
+  display: inline-block;
+  background: url(../img/icons/icon.svg) 0 0 no-repeat;
+  background-size: contain;
+  width: 3.75rem;
+  height: 1.25rem
 }
 .feedback {
   margin-left: -.9375rem;
@@ -1476,19 +1515,20 @@ body::after {
   background: #000b12;
   box-shadow: 0 0 40px 0 rgba(32,172,245,.7)
 }
+.popup__content--form {
+  max-width: 59.375rem
+}
 .contact__label {
   color: #dfe5e9;
+  font-size: 1.375rem;
   line-height: 1.4;
-  margin-bottom: 1.75rem
+  margin-bottom: 1.875rem
 }
 .contact__wrapper {
   display: grid;
-  -webkit-column-gap: 1.25rem;
-  -moz-column-gap: 1.25rem;
-  column-gap: 1.25rem;
-  row-gap: 1.6875rem;
+  gap: 1.875rem;
   grid-template-columns: repeat(2,1fr);
-  margin-bottom: 1.6875rem;
+  margin-bottom: 1.875rem;
   grid-auto-rows: 1fr
 }
 .contact__input {
@@ -1509,6 +1549,8 @@ body::after {
   border-radius: .5rem!important
 }
 .form {
+  margin: 0 auto;
+  max-width: 42.5rem;
   display: flex;
   flex-direction: column
 }
@@ -1638,6 +1680,24 @@ textarea {
   .menu__item {
     font-size: 1.25rem
   }
+  .popup__content {
+    padding-left: 1.25rem
+  }
+  .popup__content {
+    padding-right: 1.25rem
+  }
+  .popup__content {
+    padding-bottom: 2.5rem
+  }
+  .popup__content--form {
+    padding-left: 3.75rem
+  }
+  .popup__content--form {
+    padding-right: 3.75rem
+  }
+  .popup__content--form {
+    padding-bottom: 3.75rem
+  }
   .spollers {
     padding-top: 3.75rem
   }
@@ -1680,7 +1740,7 @@ textarea {
     row-gap: 1.5rem
   }
   .footer__column:nth-child(n+3) {
-    justify-items: end
+    justify-items: start
   }
   .footer__column--row {
     gap: 1.875rem
@@ -1755,6 +1815,9 @@ textarea {
   .benefits__image {
     width: 7.5rem
   }
+  .benefits__title {
+    font-size: 1.75rem
+  }
   .item-steps {
     padding: 2.5rem
   }
@@ -1786,7 +1849,13 @@ textarea {
     font-size: 6.25rem
   }
   .popup__subtitle {
-    margin-bottom: 3.125rem
+    font-size: 5rem
+  }
+  .popup__text p {
+    gap: .5rem
+  }
+  .popup__text p {
+    padding-left: 1.25rem
   }
   .feedback__title {
     margin-bottom: .625rem
@@ -1882,6 +1951,14 @@ textarea {
     grid-template-columns: auto auto
   }
 }
+@media (max-width:48em) {
+  .benefits__item {
+    gap: .625rem
+  }
+  .benefits__item {
+    padding: .9375rem
+  }
+}
 @media (max-width:30em) {
   .benefits__image {
     width: 3.125rem
@@ -1896,6 +1973,24 @@ textarea {
   }
   .menu__item {
     font-size: 1.03125rem
+  }
+  .popup__content {
+    padding-left: .625rem
+  }
+  .popup__content {
+    padding-right: .625rem
+  }
+  .popup__content {
+    padding-bottom: 1.25rem
+  }
+  .popup__content--form {
+    padding-left: .625rem
+  }
+  .popup__content--form {
+    padding-right: .625rem
+  }
+  .popup__content--form {
+    padding-bottom: 1.25rem
   }
   .spollers {
     padding-top: 2.5rem
@@ -1989,16 +2084,13 @@ textarea {
     gap: .9375rem
   }
   .hero__item-title {
-    font-size: 1.5rem
+    font-size: 1.25rem
   }
   .hero__item-description {
-    font-size: 1.5rem
+    font-size: 1.25rem
   }
-  .benefits__item {
-    gap: .625rem
-  }
-  .benefits__item {
-    padding: .9375rem
+  .benefits__title {
+    font-size: 1.125rem
   }
   .item-steps {
     padding: .625rem
@@ -2031,7 +2123,13 @@ textarea {
     font-size: 3.75rem
   }
   .popup__subtitle {
-    margin-bottom: 1.875rem
+    font-size: 2.8125rem
+  }
+  .popup__text p {
+    gap: .1875rem
+  }
+  .popup__text p {
+    padding-left: .0000000625rem
   }
   .feedback__title {
     margin-bottom: -1.25rem
@@ -2225,6 +2323,14 @@ textarea {
   .courses__list {
     grid-template-columns: repeat(2,1fr)
   }
+  .popup__list {
+    grid-template-columns: auto
+  }
+}
+@media (max-width:50.625em) {
+  .benefits__list {
+    grid-template-columns: auto
+  }
 }
 @media (max-width:47.99875em) {
   .menu__body {
@@ -2342,9 +2448,6 @@ textarea {
   .hero__more {
     grid-template-columns: auto
   }
-  .benefits__list {
-    grid-template-columns: auto
-  }
   .courses__list {
     grid-template-columns: auto
   }
@@ -2382,6 +2485,24 @@ textarea {
   }
   .menu__item {
     font-size: clamp(1.03125rem ,.9801551095rem + .2554744526vw ,1.25rem)
+  }
+  .popup__content {
+    padding-left: clamp(.625rem ,.4790145985rem + .7299270073vw ,1.25rem)
+  }
+  .popup__content {
+    padding-right: clamp(.625rem ,.4790145985rem + .7299270073vw ,1.25rem)
+  }
+  .popup__content {
+    padding-bottom: clamp(1.25rem ,.9580291971rem + 1.4598540146vw ,2.5rem)
+  }
+  .popup__content--form {
+    padding-left: clamp(.625rem ,-.1049270073rem + 3.6496350365vw ,3.75rem)
+  }
+  .popup__content--form {
+    padding-right: clamp(.625rem ,-.1049270073rem + 3.6496350365vw ,3.75rem)
+  }
+  .popup__content--form {
+    padding-bottom: clamp(1.25rem ,.6660583942rem + 2.9197080292vw ,3.75rem)
   }
   .spollers {
     padding-top: clamp(2.5rem ,2.2080291971rem + 1.4598540146vw ,3.75rem)
@@ -2475,16 +2596,13 @@ textarea {
     gap: clamp(.9375rem ,.5725364964rem + 1.8248175182vw ,2.5rem)
   }
   .hero__item-title {
-    font-size: clamp(1.5rem ,1.4416058394rem + .2919708029vw ,1.75rem)
+    font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
   .hero__item-description {
-    font-size: clamp(1.5rem ,1.4416058394rem + .2919708029vw ,1.75rem)
+    font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
-  .benefits__item {
-    gap: clamp(.625rem ,.5520072993rem + .3649635036vw ,.9375rem)
-  }
-  .benefits__item {
-    padding: clamp(.9375rem ,.8645072993rem + .3649635036vw ,1.25rem)
+  .benefits__title {
+    font-size: clamp(1.125rem ,.9790145985rem + .7299270073vw ,1.75rem)
   }
   .item-steps {
     padding: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
@@ -2517,7 +2635,13 @@ textarea {
     font-size: clamp(3.75rem ,3.1660583942rem + 2.9197080292vw ,6.25rem)
   }
   .popup__subtitle {
-    margin-bottom: clamp(1.875rem ,1.5830291971rem + 1.4598540146vw ,3.125rem)
+    font-size: clamp(2.8125rem ,2.3015510949rem + 2.5547445255vw ,5rem)
+  }
+  .popup__text p {
+    gap: clamp(.1875rem ,.1145072993rem + .3649635036vw ,.5rem)
+  }
+  .popup__text p {
+    padding-left: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem)
   }
   .feedback__title {
     margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
@@ -2614,6 +2738,14 @@ textarea {
 @media (min-width:62em)and (max-width:105.625em) {
   .hero__item {
     padding: clamp(.625rem ,-1.151504298rem + 2.8653295129vw ,1.875rem)
+  }
+}
+@media (min-width:48em)and (max-width:105.625em) {
+  .benefits__item {
+    gap: clamp(.625rem ,.3646963124rem + .5422993492vw ,.9375rem)
+  }
+  .benefits__item {
+    padding: clamp(.9375rem ,.6771963124rem + .5422993492vw ,1.25rem)
   }
 }
 @media (min-width:30em)and (max-width:105.625em) {
