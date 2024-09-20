@@ -614,26 +614,25 @@ body::after {
   transition: color .3s
 }
 .page__hero {
-  background-image: url(../img/bg/bg-01.webp);
+  background-size: cover;
   padding-top: 4.0625rem
 }
+.page__benefits {
+  background-size: cover
+}
 .page__steps {
-  background-image: url(../img/bg/bg-03.webp)
+  background-size: cover
 }
 .page__courses {
-  background-image: url(../img/bg/bg-03.webp);
   background-size: cover
 }
 .page__feedback {
-  background-image: url(../img/bg/bg-03.webp);
   background-size: cover
 }
 .page__advantages {
-  background-image: url(../img/bg/bg-03.webp);
   background-size: cover
 }
 .page__qa {
-  background-image: url(../img/bg/bg-03.webp);
   background-size: cover
 }
 .hero__container {
