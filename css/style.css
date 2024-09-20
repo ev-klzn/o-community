@@ -614,7 +614,27 @@ body::after {
   transition: color .3s
 }
 .page__hero {
+  background-image: url(../img/bg/bg-01.webp);
   padding-top: 4.0625rem
+}
+.page__steps {
+  background-image: url(../img/bg/bg-03.webp)
+}
+.page__courses {
+  background-image: url(../img/bg/bg-03.webp);
+  background-size: cover
+}
+.page__feedback {
+  background-image: url(../img/bg/bg-03.webp);
+  background-size: cover
+}
+.page__advantages {
+  background-image: url(../img/bg/bg-03.webp);
+  background-size: cover
+}
+.page__qa {
+  background-image: url(../img/bg/bg-03.webp);
+  background-size: cover
 }
 .hero__container {
   position: relative
@@ -1914,28 +1934,28 @@ textarea {
     padding-top: 10.625rem
   }
   .page__hero {
-    margin-bottom: 7.5rem
+    padding-bottom: 7.5rem
   }
   .page__benefits {
-    margin-bottom: 10rem
+    padding-bottom: 10rem
   }
   .page__steps {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .page__info {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .page__courses {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .page__feedback {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .page__advantages {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .page__qa {
-    margin-bottom: 8.125rem
+    padding-bottom: 8.125rem
   }
   .hero__title {
     font-size: 7.5rem
@@ -2212,28 +2232,28 @@ textarea {
     padding-top: 6.25rem
   }
   .page__hero {
-    margin-bottom: 3.125rem
+    padding-bottom: 3.125rem
   }
   .page__benefits {
-    margin-bottom: 4.375rem
+    padding-bottom: 4.375rem
   }
   .page__steps {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .page__info {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .page__courses {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .page__feedback {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .page__advantages {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .page__qa {
-    margin-bottom: 3.75rem
+    padding-bottom: 3.75rem
   }
   .hero__title {
     font-size: 2.25rem
@@ -2770,28 +2790,28 @@ textarea {
     padding-top: clamp(6.25rem ,5.2281021898rem + 5.1094890511vw ,10.625rem)
   }
   .page__hero {
-    margin-bottom: clamp(3.125rem ,2.1031021898rem + 5.1094890511vw ,7.5rem)
+    padding-bottom: clamp(3.125rem ,2.1031021898rem + 5.1094890511vw ,7.5rem)
   }
   .page__benefits {
-    margin-bottom: clamp(4.375rem ,3.0611313869rem + 6.5693430657vw ,10rem)
+    padding-bottom: clamp(4.375rem ,3.0611313869rem + 6.5693430657vw ,10rem)
   }
   .page__steps {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .page__info {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .page__courses {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .page__feedback {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .page__advantages {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .page__qa {
-    margin-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
+    padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .hero__title {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
