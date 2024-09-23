@@ -501,11 +501,13 @@ body::after {
   z-index: 50;
   background: rgba(3,0,11,0);
   color: #fff;
-  transition: background 1s;
+  transition: background 1s,padding-top 1s,padding-bottom 1s;
   padding-top: .9375rem;
   padding-bottom: .9375rem
 }
 .header._header-scroll {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
   background: rgba(3,0,11,.6470588235);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px)
