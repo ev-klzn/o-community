@@ -498,13 +498,11 @@ body::after {
   z-index: 50;
   background: rgba(3,0,11,0);
   color: #fff;
-  transition: all 1s;
+  transition: background 1s;
   padding-top: .9375rem;
   padding-bottom: .9375rem
 }
 .header._header-scroll {
-  padding-top: .625rem;
-  padding-bottom: .625rem;
   background: rgba(3,0,11,.6470588235);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px)
@@ -612,28 +610,6 @@ body::after {
 }
 .footer__copy-link {
   transition: color .3s
-}
-.page__hero {
-  background-size: cover;
-  padding-top: 4.0625rem
-}
-.page__benefits {
-  background-size: cover
-}
-.page__steps {
-  background-size: cover
-}
-.page__courses {
-  background-size: cover
-}
-.page__feedback {
-  background-size: cover
-}
-.page__advantages {
-  background-size: cover
-}
-.page__qa {
-  background-size: cover
 }
 .hero__container {
   position: relative
