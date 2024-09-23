@@ -1775,6 +1775,92 @@ textarea {
   display: grid;
   gap: .3125rem
 }
+.page__advantages,
+.page__benefits,
+.page__courses,
+.page__feedback,
+.page__hero,
+.page__qa,
+.page__steps {
+  position: relative
+}
+.page__hero video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__benefits video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__steps video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__courses video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__feedback video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__advantages video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
+.page__qa video {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .5
+}
 .swiper {
   overflow: hidden
 }
@@ -2727,6 +2813,27 @@ textarea {
   }
   .contact__wrapper {
     grid-template-columns: auto
+  }
+  .page__hero video {
+    display: none
+  }
+  .page__benefits video {
+    display: none
+  }
+  .page__steps video {
+    display: none
+  }
+  .page__courses video {
+    display: none
+  }
+  .page__feedback video {
+    display: none
+  }
+  .page__advantages video {
+    display: none
+  }
+  .page__qa video {
+    display: none
   }
 }
 @media (max-width:47.99875em)and (max-width:20em) {
