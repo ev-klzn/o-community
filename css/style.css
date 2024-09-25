@@ -80,9 +80,6 @@ body {
   -ms-scroll-chaining: none;
   overscroll-behavior: none
 }
-.loaded body {
-  opacity: 1
-}
 .wrapper {
   min-height: 100%;
   display: flex;
