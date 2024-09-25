@@ -71,7 +71,7 @@ h6 {
   font-size: inherit
 }
 body {
-  background-color: #08001b;
+  background-color: #03000b;
   background-size: cover
 }
 .lock body {
@@ -264,7 +264,7 @@ body::after {
   transition: -webkit-transform .3s ease 0s;
   transition: transform .3s ease 0s;
   transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
-  background-color: #08001b;
+  background-color: #03000b;
   width: 100%;
   max-width: 1760px;
   border-radius: 20px;
@@ -499,7 +499,7 @@ body::after {
   position: fixed;
   width: 100%;
   z-index: 50;
-  background: rgba(8,0,27,0);
+  background: rgba(3,0,11,0);
   color: #fff;
   transition: background 1s,padding-top 1s,padding-bottom 1s;
   padding-top: .9375rem;
@@ -508,7 +508,7 @@ body::after {
 .header._header-scroll {
   padding-top: .625rem;
   padding-bottom: .625rem;
-  background: rgba(8,0,27,.6470588235);
+  background: rgba(3,0,11,.6470588235);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px)
 }
@@ -1697,7 +1697,7 @@ body::after {
 .contact__input {
   border-radius: .5rem;
   border: 1px solid #20acf5;
-  background: #08001b
+  background: #03000b
 }
 .contact__input:focus {
   outline: #20acf5;
@@ -1773,8 +1773,7 @@ textarea {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
-  opacity: .5
+  object-fit: cover
 }
 .swiper {
   overflow: hidden
@@ -2693,10 +2692,10 @@ textarea {
   .header._header-scroll {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background: #08001b
+    background: #03000b
   }
   .header {
-    background-color: #08001b
+    background-color: #03000b
   }
   .header__container {
     -webkit-column-gap: .9375rem;
