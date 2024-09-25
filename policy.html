@@ -4,7 +4,7 @@
 <head>
 	<title>Policy</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240925150757">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240925152102">
 	<meta name="robots" content="noindex, nofollow">
 	<!-- <style>
     body {
@@ -153,8 +153,8 @@
         <h4 class="popup__label popup__label--center">
           What awaits you on the course
         </h4>
-        <ul class="popup__list">
-          <div class="popup__column">
+        <div class="popup__list">
+          <ul class="popup__column">
             <li class="popup__item">
               <h4 class="popup__title">
                 Studies of registration of the questionnaire
@@ -250,8 +250,8 @@
                 </p>
               </div>
             </li>
-          </div>
-          <div class="popup__column">
+          </ul>
+          <ul class="popup__column">
             <li class="popup__item">
               <h4 class="popup__title">
                 Psychology of communication with subscribers
@@ -319,8 +319,8 @@
                 </p>
               </div>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -542,7 +542,8 @@
                   placeholder="E-mail *"
                   class="contact__input input" />
                 <input
-                  ^\d{10,12}$
+                  
+                  pattern="^\d{10,12}$"
                   type="tel"
                   name="form[tel]"
                   id="tel"
@@ -585,8 +586,8 @@
 						<h4 class="popup__label popup__label--center">
 							что тебя ожидает на курсе
 						</h4>
-						<ul class="popup__list">
-							<div class="popup__column">
+						<div class="popup__list">
+							<ul class="popup__column">
 								<li class="popup__item">
 									<h4 class="popup__title">Обучение регистрации анкеты</h4>
 									<div class="popup__text">
@@ -678,8 +679,8 @@
 										</p>
 									</div>
 								</li>
-							</div>
-							<div class="popup__column">
+							</ul>
+							<ul class="popup__column">
 								<li class="popup__item">
 									<h4 class="popup__title">Психология общения с подписчиками</h4>
 									<div class="popup__text text">
@@ -744,8 +745,8 @@
 										</p>
 									</div>
 								</li>
-							</div>
-						</ul>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -907,7 +908,7 @@
 									<div class="contact__wrapper">
 										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
 										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
-										<input ^\d{10,12}$ type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
 										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
 									</div>
 
@@ -922,7 +923,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240925150757"></script>
+	<script src="js/app.min.js?_v=20240925152102"></script>
 </body>
 
 </html>
