@@ -503,7 +503,7 @@ body::after {
   width: 100%;
   z-index: 50;
   background: rgba(3,0,11,0);
-  color: #fff;
+  color: #dfe5e9;
   transition: background 1s,padding-top 1s,padding-bottom 1s;
   padding-top: .9375rem;
   padding-bottom: .9375rem
