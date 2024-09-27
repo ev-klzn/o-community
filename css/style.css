@@ -621,14 +621,13 @@ body::after {
 }
 .hero__decor-left {
   position: absolute;
+  z-index: -1;
   top: -10%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .hero__decor-right {
   position: absolute;
   z-index: -1;
-  bottom: 4.6875rem;
   top: -10%;
   right: 0
 }
@@ -842,14 +841,13 @@ body::after {
 }
 .benefits__decor-left {
   position: absolute;
+  z-index: -1;
   top: 5%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .benefits__decor-right {
   position: absolute;
   z-index: -1;
-  bottom: 4.6875rem;
   bottom: 5%;
   right: 0
 }
@@ -911,16 +909,15 @@ body::after {
 }
 .steps__decor-left {
   position: absolute;
+  z-index: -1;
   top: 5%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .steps__decor-right {
   position: absolute;
-  bottom: 4.6875rem;
+  z-index: -1;
   bottom: 5%;
-  right: 0;
-  z-index: -1
+  right: 0
 }
 .steps__container {
   position: relative
@@ -1094,16 +1091,15 @@ body::after {
 }
 .courses__decor-left {
   position: absolute;
+  z-index: -1;
   top: 0;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .courses__decor-right {
   position: absolute;
-  bottom: 4.6875rem;
+  z-index: -1;
   bottom: 0;
-  right: 0;
-  z-index: -1
+  right: 0
 }
 .courses__title {
   text-transform: uppercase;
@@ -1443,14 +1439,13 @@ body::after {
 }
 .feedback__decor-left {
   position: absolute;
+  z-index: -1;
   top: 5%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .feedback__decor-right {
   position: absolute;
   z-index: -1;
-  bottom: 4.6875rem;
   bottom: 5%;
   right: 0
 }
@@ -1579,16 +1574,15 @@ body::after {
 }
 .advantages__decor-left {
   position: absolute;
+  z-index: -1;
   bottom: 5%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .advantages__decor-right {
   position: absolute;
-  bottom: 4.6875rem;
+  z-index: -1;
   bottom: 5%;
-  right: 0;
-  z-index: -1
+  right: 0
 }
 .advantages__title {
   text-transform: uppercase;
@@ -1717,14 +1711,13 @@ body::after {
 }
 .qa__decor-left {
   position: absolute;
+  z-index: -1;
   top: 10%;
-  left: 0;
-  z-index: -1
+  left: 0
 }
 .qa__decor-right {
   position: absolute;
   z-index: -1;
-  bottom: 4.6875rem;
   bottom: 10%;
   right: 0
 }
@@ -2740,9 +2733,6 @@ textarea {
   .menu__list {
     row-gap: 1.375rem
   }
-  [class*=decor] {
-    display: none
-  }
   .footer__column {
     justify-items: center
   }
@@ -2877,6 +2867,9 @@ textarea {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  [class*=decor] {
+    display: none
+  }
   .header._header-scroll {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
@@ -2898,61 +2891,19 @@ textarea {
   .footer__link {
     text-transform: uppercase
   }
-  .hero__decor-left {
-    display: none
-  }
-  .hero__decor-right {
-    display: none
-  }
   .hero__actions {
     grid-template-columns: auto
   }
   .hero__more {
     grid-template-columns: auto
   }
-  .benefits__decor-left {
-    display: none
-  }
-  .benefits__decor-right {
-    display: none
-  }
-  .steps__decor-left {
-    display: none
-  }
-  .steps__decor-right {
-    display: none
-  }
-  .courses__decor-left {
-    display: none
-  }
-  .courses__decor-right {
-    display: none
-  }
   .courses__list {
     grid-template-columns: auto
-  }
-  .feedback__decor-left {
-    display: none
-  }
-  .feedback__decor-right {
-    display: none
   }
   .feedback__list {
     grid-template-columns: auto
   }
   .item-feedback:nth-child(even) {
-    display: none
-  }
-  .advantages__decor-left {
-    display: none
-  }
-  .advantages__decor-right {
-    display: none
-  }
-  .qa__decor-left {
-    display: none
-  }
-  .qa__decor-right {
     display: none
   }
   .contact__wrapper {
