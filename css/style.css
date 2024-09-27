@@ -137,6 +137,9 @@ body {
 .button--transparent {
   background-color: rgba(0,0,0,0)
 }
+.button--bg {
+  background-color: #03000b
+}
 .button--fw {
   width: 100%
 }
@@ -450,6 +453,9 @@ body::after {
 [class*="--center"] {
   text-align: center
 }
+[class*=decor] {
+  pointer-events: none
+}
 .text {
   display: grid;
   gap: .9375rem;
@@ -612,6 +618,21 @@ body::after {
 }
 .footer__copy-link {
   transition: color .3s
+}
+.hero__decor-left {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  z-index: -1;
+  height: 100%
+}
+.hero__decor-right {
+  position: absolute;
+  z-index: -1;
+  bottom: 4.6875rem;
+  top: -10%;
+  right: 0;
+  height: 100%
 }
 .hero__container {
   position: relative
@@ -820,14 +841,16 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .benefits__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   bottom: 5%;
-  right: 0
+  right: 0;
+  height: 100%
 }
 .benefits__list {
   display: grid;
@@ -887,16 +910,18 @@ body::after {
 }
 .steps__decor-left {
   position: absolute;
-  bottom: 5%;
+  top: 5%;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .steps__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 5%;
   right: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .steps__container {
   position: relative
@@ -1072,14 +1097,16 @@ body::after {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .courses__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 0;
   right: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .courses__title {
   text-transform: uppercase;
@@ -1421,14 +1448,16 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .feedback__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   bottom: 5%;
-  right: 0
+  right: 0;
+  height: 100%
 }
 .feedback__container--width {
   max-width: 112.5rem
@@ -1557,14 +1586,16 @@ body::after {
   position: absolute;
   bottom: 5%;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .advantages__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 5%;
   right: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .advantages__title {
   text-transform: uppercase;
@@ -1695,14 +1726,16 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  height: 100%
 }
 .qa__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   bottom: 5%;
-  right: 0
+  right: 0;
+  height: 100%
 }
 .qa__title {
   text-transform: uppercase;
@@ -2095,12 +2128,6 @@ textarea {
   .hero__item-description {
     font-size: 1.75rem
   }
-  .benefits__decor-left {
-    width: 24rem
-  }
-  .benefits__decor-right {
-    width: 53.75rem
-  }
   .benefits__item {
     gap: .9375rem
   }
@@ -2151,12 +2178,6 @@ textarea {
   }
   .popup__text p {
     padding-left: 1.25rem
-  }
-  .feedback__decor-left {
-    width: 24rem
-  }
-  .feedback__decor-right {
-    width: 53.75rem
   }
   .feedback__title {
     margin-bottom: .625rem
@@ -2246,12 +2267,6 @@ textarea {
   }
   .advantages__item-title {
     font-size: 2rem
-  }
-  .qa__decor-left {
-    width: 24rem
-  }
-  .qa__decor-right {
-    width: 53.75rem
   }
   .popup__subtitle--form {
     font-size: 2.625rem
@@ -2408,12 +2423,6 @@ textarea {
   .hero__item-description {
     font-size: 1.25rem
   }
-  .benefits__decor-left {
-    width: 9.375rem
-  }
-  .benefits__decor-right {
-    width: 9.375rem
-  }
   .benefits__title {
     font-size: 1.125rem
   }
@@ -2455,12 +2464,6 @@ textarea {
   }
   .popup__text p {
     padding-left: .0000000625rem
-  }
-  .feedback__decor-left {
-    width: 9.375rem
-  }
-  .feedback__decor-right {
-    width: 9.375rem
   }
   .feedback__title {
     margin-bottom: -1.25rem
@@ -2536,12 +2539,6 @@ textarea {
   }
   .advantages__item-title {
     font-size: 1.25rem
-  }
-  .qa__decor-left {
-    width: 9.375rem
-  }
-  .qa__decor-right {
-    width: 9.375rem
   }
   .popup__subtitle--form {
     font-size: 1.25rem
@@ -2823,6 +2820,12 @@ textarea {
   .footer__link {
     text-transform: uppercase
   }
+  .hero__decor-left {
+    display: none
+  }
+  .hero__decor-right {
+    display: none
+  }
   .hero__actions {
     grid-template-columns: auto
   }
@@ -3024,12 +3027,6 @@ textarea {
   .hero__item-description {
     font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
-  .benefits__decor-left {
-    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
-  }
-  .benefits__decor-right {
-    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
-  }
   .benefits__title {
     font-size: clamp(1.125rem ,.9790145985rem + .7299270073vw ,1.75rem)
   }
@@ -3071,12 +3068,6 @@ textarea {
   }
   .popup__text p {
     padding-left: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem)
-  }
-  .feedback__decor-left {
-    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
-  }
-  .feedback__decor-right {
-    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
   }
   .feedback__title {
     margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
@@ -3152,12 +3143,6 @@ textarea {
   }
   .advantages__item-title {
     font-size: clamp(1.25rem ,1.0748175182rem + .8759124088vw ,2rem)
-  }
-  .qa__decor-left {
-    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
-  }
-  .qa__decor-right {
-    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
   }
   .popup__subtitle--form {
     font-size: clamp(1.25rem ,.9288321168rem + 1.6058394161vw ,2.625rem)
@@ -3262,8 +3247,13 @@ textarea {
     box-shadow: 0 0 20px 6px rgba(32,172,245,.7)
   }
   .button--transparent:hover {
-    border: 1px solid #36a1df;
     background-color: rgba(0,0,0,0);
+    border: 1px solid #36a1df;
+    box-shadow: 0 0 20px 6px rgba(32,172,245,.7)
+  }
+  .button--bg:hover {
+    background-color: #03000b;
+    border: 1px solid #36a1df;
     box-shadow: 0 0 20px 6px rgba(32,172,245,.7)
   }
   .menu__link:hover {
