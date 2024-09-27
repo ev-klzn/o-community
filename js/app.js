@@ -4150,7 +4150,7 @@
             this.animation = this.animationFrame.bind(this);
             this.offset = 0;
             this.value = 0;
-            this.smooth = parent.dataset.prlxSmooth ? Number(parent.dataset.prlxSmooth) : 15;
+            this.smooth = parent.dataset.prlxSmooth ? Number(parent.dataset.prlxSmooth) : 150;
             this.setEvents();
         }
         setEvents() {

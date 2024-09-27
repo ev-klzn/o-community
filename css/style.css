@@ -841,18 +841,6 @@ body::after {
   font-weight: 800;
   text-transform: uppercase
 }
-.benefits__decor-left {
-  position: absolute;
-  z-index: -1;
-  top: 5%;
-  left: 0
-}
-.benefits__decor-right {
-  position: absolute;
-  z-index: -1;
-  bottom: 5%;
-  right: 0
-}
 .benefits__list {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -2075,10 +2063,10 @@ textarea {
     padding-bottom: 8.125rem
   }
   .hero__decor-left {
-    width: 31.25rem
+    width: 25rem
   }
   .hero__decor-right {
-    width: 37.5rem
+    width: 31.25rem
   }
   .hero__title {
     font-size: 7.5rem
@@ -2117,12 +2105,6 @@ textarea {
   .hero__item-description {
     font-size: 1.75rem
   }
-  .benefits__decor-left {
-    width: 24rem
-  }
-  .benefits__decor-right {
-    width: 37.5rem
-  }
   .benefits__item {
     gap: .9375rem
   }
@@ -2136,10 +2118,10 @@ textarea {
     font-size: 1.75rem
   }
   .steps__decor-left {
-    width: 32.4375rem
+    width: 25rem
   }
   .steps__decor-right {
-    width: 37.5rem
+    width: 25rem
   }
   .item-steps {
     padding: 2.5rem
@@ -2148,10 +2130,10 @@ textarea {
     font-size: 2.625rem
   }
   .courses__decor-left {
-    width: 32.4375rem
+    width: 25rem
   }
   .courses__decor-right {
-    width: 37.5rem
+    width: 25rem
   }
   .item-courses {
     padding: 1.875rem
@@ -2190,7 +2172,7 @@ textarea {
     width: 24rem
   }
   .feedback__decor-right {
-    width: 37.5rem
+    width: 25rem
   }
   .feedback__title {
     margin-bottom: .625rem
@@ -2270,10 +2252,10 @@ textarea {
     height: 1.5rem
   }
   .advantages__decor-left {
-    width: 32.4375rem
+    width: 25rem
   }
   .advantages__decor-right {
-    width: 37.5rem
+    width: 25rem
   }
   .advantages__label {
     margin-bottom: 3.75rem
@@ -2454,12 +2436,6 @@ textarea {
   .hero__item-description {
     font-size: 1.25rem
   }
-  .benefits__decor-left {
-    width: 9.375rem
-  }
-  .benefits__decor-right {
-    width: 9.375rem
-  }
   .benefits__title {
     font-size: 1.125rem
   }
@@ -2479,7 +2455,7 @@ textarea {
     width: 9.375rem
   }
   .courses__decor-right {
-    width: 18.75rem
+    width: 9.375rem
   }
   .item-courses {
     padding: .625rem
@@ -3026,10 +3002,10 @@ textarea {
     padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
   .hero__decor-left {
-    width: clamp(9.375rem ,4.2655109489rem + 25.5474452555vw ,31.25rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .hero__decor-right {
-    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+    width: clamp(9.375rem ,4.2655109489rem + 25.5474452555vw ,31.25rem)
   }
   .hero__title {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
@@ -3065,20 +3041,14 @@ textarea {
   .hero__item-description {
     font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
-  .benefits__decor-left {
-    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
-  }
-  .benefits__decor-right {
-    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
-  }
   .benefits__title {
     font-size: clamp(1.125rem ,.9790145985rem + .7299270073vw ,1.75rem)
   }
   .steps__decor-left {
-    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .steps__decor-right {
-    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .item-steps {
     padding: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
@@ -3087,10 +3057,10 @@ textarea {
     font-size: clamp(1.875rem ,1.6998175182rem + .8759124088vw ,2.625rem)
   }
   .courses__decor-left {
-    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .courses__decor-right {
-    width: clamp(18.75rem ,14.3704379562rem + 21.897810219vw ,37.5rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .item-courses {
     padding: clamp(.625rem ,.3330291971rem + 1.4598540146vw ,1.875rem)
@@ -3129,7 +3099,7 @@ textarea {
     width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
   }
   .feedback__decor-right {
-    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .feedback__title {
     margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
@@ -3195,10 +3165,10 @@ textarea {
     height: clamp(.9375rem ,.8061131387rem + .6569343066vw ,1.5rem)
   }
   .advantages__decor-left {
-    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .advantages__decor-right {
-    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+    width: clamp(9.375rem ,5.7253649635rem + 18.2481751825vw ,25rem)
   }
   .advantages__label {
     margin-bottom: clamp(2.5rem ,2.2080291971rem + 1.4598540146vw ,3.75rem)
