@@ -725,6 +725,7 @@ body::after {
   border: 1px solid #20acf5;
   background: #000b12;
   box-shadow: 0 0 40px 0 rgba(32,172,245,.7);
+  max-width: 26.875rem;
   opacity: 0;
   -webkit-transform: translate(0,10%);
   transform: translate(0,10%);
@@ -817,7 +818,7 @@ body::after {
   }
 }
 .hero__item-body {
-  text-align: center
+  text-align: end
 }
 .hero__item-title {
   color: #a9b9c3;
@@ -828,6 +829,7 @@ body::after {
   margin-bottom: .625rem
 }
 .hero__item-about {
+  text-align: end;
   display: flex;
   gap: .625rem;
   align-items: center;
@@ -1905,9 +1907,6 @@ textarea {
   .hero__box {
     max-width: 42.5rem
   }
-  .hero__more {
-    max-width: 31.25rem
-  }
 }
 @media (min-width:63.99875em) {
   .advantages__item--5 {
@@ -2110,7 +2109,7 @@ textarea {
     gap: 2.5rem
   }
   .hero__item {
-    padding: 1.875rem
+    padding: 1.25rem
   }
   .hero__item-title {
     font-size: 1.75rem
@@ -2740,8 +2739,7 @@ textarea {
     grid-template-columns: auto
   }
   .hero__actions {
-    justify-content: center;
-    grid-template-columns: 1fr 1fr
+    justify-content: center
   }
   .hero__wrapper {
     justify-content: stretch;
@@ -2752,6 +2750,7 @@ textarea {
   }
   .hero__more {
     grid-template-columns: auto;
+    justify-items: center;
     justify-content: stretch
   }
   .hero__item-image {
@@ -2891,11 +2890,10 @@ textarea {
   .footer__link {
     text-transform: uppercase
   }
-  .hero__actions {
-    grid-template-columns: auto
-  }
   .hero__more {
-    grid-template-columns: auto
+    grid-template-columns: auto;
+    justify-items: normal;
+    justify-content: stretch
   }
   .courses__list {
     grid-template-columns: auto
@@ -2921,6 +2919,11 @@ textarea {
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
+  }
+}
+@media (max-width:39.375em) {
+  .hero__actions {
+    grid-template-columns: auto
   }
 }
 @media (max-width:29.99875em) {
@@ -3243,7 +3246,7 @@ textarea {
 }
 @media (min-width:62em)and (max-width:105.625em) {
   .hero__item {
-    padding: clamp(.625rem ,-1.151504298rem + 2.8653295129vw ,1.875rem)
+    padding: clamp(.625rem ,-.263252149rem + 1.4326647564vw ,1.25rem)
   }
 }
 @media (min-width:48em)and (max-width:105.625em) {
