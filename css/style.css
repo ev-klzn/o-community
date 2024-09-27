@@ -816,6 +816,19 @@ body::after {
   font-weight: 800;
   text-transform: uppercase
 }
+.benefits__decor-left {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: -1
+}
+.benefits__decor-right {
+  position: absolute;
+  z-index: -1;
+  bottom: 4.6875rem;
+  bottom: 5%;
+  right: 0
+}
 .benefits__list {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -871,6 +884,19 @@ body::after {
   text-align: center;
   font-weight: 500;
   text-transform: uppercase
+}
+.steps__decor-left {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  z-index: -1
+}
+.steps__decor-right {
+  position: absolute;
+  bottom: 4.6875rem;
+  bottom: 5%;
+  right: 0;
+  z-index: -1
 }
 .steps__container {
   position: relative
@@ -1041,6 +1067,19 @@ body::after {
     -webkit-transform: translateX(calc(-100% - 20px));
     transform: translateX(calc(-100% - 20px))
   }
+}
+.courses__decor-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.courses__decor-right {
+  position: absolute;
+  bottom: 4.6875rem;
+  bottom: 0;
+  right: 0;
+  z-index: -1
 }
 .courses__title {
   text-transform: uppercase;
@@ -1378,6 +1417,19 @@ body::after {
   margin-left: -.9375rem;
   margin-right: -.9375rem
 }
+.feedback__decor-left {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: -1
+}
+.feedback__decor-right {
+  position: absolute;
+  z-index: -1;
+  bottom: 4.6875rem;
+  bottom: 5%;
+  right: 0
+}
 .feedback__container--width {
   max-width: 112.5rem
 }
@@ -1500,6 +1552,19 @@ body::after {
 }
 .item-feedback__image {
   aspect-ratio: 24/24
+}
+.advantages__decor-left {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  z-index: -1
+}
+.advantages__decor-right {
+  position: absolute;
+  bottom: 4.6875rem;
+  bottom: 5%;
+  right: 0;
+  z-index: -1
 }
 .advantages__title {
   text-transform: uppercase;
@@ -1625,6 +1690,19 @@ body::after {
   display: block;
   color: #0e79b7;
   text-align: right
+}
+.qa__decor-left {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: -1
+}
+.qa__decor-right {
+  position: absolute;
+  z-index: -1;
+  bottom: 4.6875rem;
+  bottom: 5%;
+  right: 0
 }
 .qa__title {
   text-transform: uppercase;
@@ -2017,6 +2095,12 @@ textarea {
   .hero__item-description {
     font-size: 1.75rem
   }
+  .benefits__decor-left {
+    width: 24rem
+  }
+  .benefits__decor-right {
+    width: 53.75rem
+  }
   .benefits__item {
     gap: .9375rem
   }
@@ -2067,6 +2151,12 @@ textarea {
   }
   .popup__text p {
     padding-left: 1.25rem
+  }
+  .feedback__decor-left {
+    width: 24rem
+  }
+  .feedback__decor-right {
+    width: 53.75rem
   }
   .feedback__title {
     margin-bottom: .625rem
@@ -2156,6 +2246,12 @@ textarea {
   }
   .advantages__item-title {
     font-size: 2rem
+  }
+  .qa__decor-left {
+    width: 24rem
+  }
+  .qa__decor-right {
+    width: 53.75rem
   }
   .popup__subtitle--form {
     font-size: 2.625rem
@@ -2312,6 +2408,12 @@ textarea {
   .hero__item-description {
     font-size: 1.25rem
   }
+  .benefits__decor-left {
+    width: 9.375rem
+  }
+  .benefits__decor-right {
+    width: 9.375rem
+  }
   .benefits__title {
     font-size: 1.125rem
   }
@@ -2353,6 +2455,12 @@ textarea {
   }
   .popup__text p {
     padding-left: .0000000625rem
+  }
+  .feedback__decor-left {
+    width: 9.375rem
+  }
+  .feedback__decor-right {
+    width: 9.375rem
   }
   .feedback__title {
     margin-bottom: -1.25rem
@@ -2429,6 +2537,12 @@ textarea {
   .advantages__item-title {
     font-size: 1.25rem
   }
+  .qa__decor-left {
+    width: 9.375rem
+  }
+  .qa__decor-right {
+    width: 9.375rem
+  }
   .popup__subtitle--form {
     font-size: 1.25rem
   }
@@ -2471,6 +2585,7 @@ textarea {
     top: 14%;
     left: 48%;
     height: 85%;
+    z-index: 1;
     opacity: 0;
     -webkit-animation: down 3s linear 3s infinite;
     animation: down 3s linear 3s infinite
@@ -2714,13 +2829,49 @@ textarea {
   .hero__more {
     grid-template-columns: auto
   }
+  .benefits__decor-left {
+    display: none
+  }
+  .benefits__decor-right {
+    display: none
+  }
+  .steps__decor-left {
+    display: none
+  }
+  .steps__decor-right {
+    display: none
+  }
+  .courses__decor-left {
+    display: none
+  }
+  .courses__decor-right {
+    display: none
+  }
   .courses__list {
     grid-template-columns: auto
+  }
+  .feedback__decor-left {
+    display: none
+  }
+  .feedback__decor-right {
+    display: none
   }
   .feedback__list {
     grid-template-columns: auto
   }
   .item-feedback:nth-child(even) {
+    display: none
+  }
+  .advantages__decor-left {
+    display: none
+  }
+  .advantages__decor-right {
+    display: none
+  }
+  .qa__decor-left {
+    display: none
+  }
+  .qa__decor-right {
     display: none
   }
   .contact__wrapper {
@@ -2873,6 +3024,12 @@ textarea {
   .hero__item-description {
     font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
+  .benefits__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .benefits__decor-right {
+    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
+  }
   .benefits__title {
     font-size: clamp(1.125rem ,.9790145985rem + .7299270073vw ,1.75rem)
   }
@@ -2914,6 +3071,12 @@ textarea {
   }
   .popup__text p {
     padding-left: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem)
+  }
+  .feedback__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .feedback__decor-right {
+    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
   }
   .feedback__title {
     margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
@@ -2989,6 +3152,12 @@ textarea {
   }
   .advantages__item-title {
     font-size: clamp(1.25rem ,1.0748175182rem + .8759124088vw ,2rem)
+  }
+  .qa__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .qa__decor-right {
+    width: clamp(9.375rem ,-.9899635036rem + 51.8248175182vw ,53.75rem)
   }
   .popup__subtitle--form {
     font-size: clamp(1.25rem ,.9288321168rem + 1.6058394161vw ,2.625rem)
