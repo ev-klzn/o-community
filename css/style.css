@@ -257,6 +257,7 @@ body::after {
   align-items: center
 }
 .popup__content {
+  position: relative;
   visibility: hidden;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -1763,6 +1764,15 @@ body::after {
 }
 .popup__content--form {
   max-width: 59.375rem
+}
+.popup__close {
+  position: absolute;
+  top: .9375rem;
+  right: .9375rem;
+  z-index: 150
+}
+.popup__body {
+  padding-top: 1.875rem
 }
 .contact__label {
   color: #dfe5e9;
