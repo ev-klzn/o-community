@@ -623,16 +623,14 @@ body::after {
   position: absolute;
   top: -10%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .hero__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   top: -10%;
-  right: 0;
-  height: 100%
+  right: 0
 }
 .hero__container {
   position: relative
@@ -841,16 +839,14 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .benefits__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   bottom: 5%;
-  right: 0;
-  height: 100%
+  right: 0
 }
 .benefits__list {
   display: grid;
@@ -912,16 +908,14 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .steps__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 5%;
   right: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .steps__container {
   position: relative
@@ -1097,16 +1091,14 @@ body::after {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .courses__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 0;
   right: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .courses__title {
   text-transform: uppercase;
@@ -1448,16 +1440,14 @@ body::after {
   position: absolute;
   top: 5%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .feedback__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
   bottom: 5%;
-  right: 0;
-  height: 100%
+  right: 0
 }
 .feedback__container--width {
   max-width: 112.5rem
@@ -1586,16 +1576,14 @@ body::after {
   position: absolute;
   bottom: 5%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .advantages__decor-right {
   position: absolute;
   bottom: 4.6875rem;
   bottom: 5%;
   right: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .advantages__title {
   text-transform: uppercase;
@@ -1724,18 +1712,16 @@ body::after {
 }
 .qa__decor-left {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 0;
-  z-index: -1;
-  height: 100%
+  z-index: -1
 }
 .qa__decor-right {
   position: absolute;
   z-index: -1;
   bottom: 4.6875rem;
-  bottom: 5%;
-  right: 0;
-  height: 100%
+  bottom: 10%;
+  right: 0
 }
 .qa__title {
   text-transform: uppercase;
@@ -2091,6 +2077,12 @@ textarea {
   .page__qa {
     padding-bottom: 8.125rem
   }
+  .hero__decor-left {
+    width: 31.25rem
+  }
+  .hero__decor-right {
+    width: 37.5rem
+  }
   .hero__title {
     font-size: 7.5rem
   }
@@ -2128,6 +2120,12 @@ textarea {
   .hero__item-description {
     font-size: 1.75rem
   }
+  .benefits__decor-left {
+    width: 24rem
+  }
+  .benefits__decor-right {
+    width: 37.5rem
+  }
   .benefits__item {
     gap: .9375rem
   }
@@ -2140,11 +2138,23 @@ textarea {
   .benefits__title {
     font-size: 1.75rem
   }
+  .steps__decor-left {
+    width: 32.4375rem
+  }
+  .steps__decor-right {
+    width: 37.5rem
+  }
   .item-steps {
     padding: 2.5rem
   }
   .item-steps__title {
     font-size: 2.625rem
+  }
+  .courses__decor-left {
+    width: 32.4375rem
+  }
+  .courses__decor-right {
+    width: 37.5rem
   }
   .item-courses {
     padding: 1.875rem
@@ -2178,6 +2188,12 @@ textarea {
   }
   .popup__text p {
     padding-left: 1.25rem
+  }
+  .feedback__decor-left {
+    width: 24rem
+  }
+  .feedback__decor-right {
+    width: 37.5rem
   }
   .feedback__title {
     margin-bottom: .625rem
@@ -2256,6 +2272,12 @@ textarea {
   .item-feedback__image {
     height: 1.5rem
   }
+  .advantages__decor-left {
+    width: 32.4375rem
+  }
+  .advantages__decor-right {
+    width: 37.5rem
+  }
   .advantages__label {
     margin-bottom: 3.75rem
   }
@@ -2267,6 +2289,12 @@ textarea {
   }
   .advantages__item-title {
     font-size: 2rem
+  }
+  .qa__decor-left {
+    width: 24rem
+  }
+  .qa__decor-right {
+    width: 37.5rem
   }
   .popup__subtitle--form {
     font-size: 2.625rem
@@ -2389,6 +2417,12 @@ textarea {
   .page__qa {
     padding-bottom: 3.75rem
   }
+  .hero__decor-left {
+    width: 9.375rem
+  }
+  .hero__decor-right {
+    width: 9.375rem
+  }
   .hero__title {
     font-size: 2.25rem
   }
@@ -2423,14 +2457,32 @@ textarea {
   .hero__item-description {
     font-size: 1.25rem
   }
+  .benefits__decor-left {
+    width: 9.375rem
+  }
+  .benefits__decor-right {
+    width: 9.375rem
+  }
   .benefits__title {
     font-size: 1.125rem
+  }
+  .steps__decor-left {
+    width: 9.375rem
+  }
+  .steps__decor-right {
+    width: 9.375rem
   }
   .item-steps {
     padding: .625rem
   }
   .item-steps__title {
     font-size: 1.875rem
+  }
+  .courses__decor-left {
+    width: 9.375rem
+  }
+  .courses__decor-right {
+    width: 18.75rem
   }
   .item-courses {
     padding: .625rem
@@ -2464,6 +2516,12 @@ textarea {
   }
   .popup__text p {
     padding-left: .0000000625rem
+  }
+  .feedback__decor-left {
+    width: 9.375rem
+  }
+  .feedback__decor-right {
+    width: 9.375rem
   }
   .feedback__title {
     margin-bottom: -1.25rem
@@ -2528,6 +2586,12 @@ textarea {
   .item-feedback__image {
     height: .9375rem
   }
+  .advantages__decor-left {
+    width: 9.375rem
+  }
+  .advantages__decor-right {
+    width: 9.375rem
+  }
   .advantages__label {
     margin-bottom: 2.5rem
   }
@@ -2539,6 +2603,12 @@ textarea {
   }
   .advantages__item-title {
     font-size: 1.25rem
+  }
+  .qa__decor-left {
+    width: 9.375rem
+  }
+  .qa__decor-right {
+    width: 9.375rem
   }
   .popup__subtitle--form {
     font-size: 1.25rem
@@ -2823,19 +2893,61 @@ textarea {
   .footer__link {
     text-transform: uppercase
   }
+  .hero__decor-left {
+    display: none
+  }
+  .hero__decor-right {
+    display: none
+  }
   .hero__actions {
     grid-template-columns: auto
   }
   .hero__more {
     grid-template-columns: auto
   }
+  .benefits__decor-left {
+    display: none
+  }
+  .benefits__decor-right {
+    display: none
+  }
+  .steps__decor-left {
+    display: none
+  }
+  .steps__decor-right {
+    display: none
+  }
+  .courses__decor-left {
+    display: none
+  }
+  .courses__decor-right {
+    display: none
+  }
   .courses__list {
     grid-template-columns: auto
+  }
+  .feedback__decor-left {
+    display: none
+  }
+  .feedback__decor-right {
+    display: none
   }
   .feedback__list {
     grid-template-columns: auto
   }
   .item-feedback:nth-child(even) {
+    display: none
+  }
+  .advantages__decor-left {
+    display: none
+  }
+  .advantages__decor-right {
+    display: none
+  }
+  .qa__decor-left {
+    display: none
+  }
+  .qa__decor-right {
     display: none
   }
   .contact__wrapper {
@@ -2954,6 +3066,12 @@ textarea {
   .page__qa {
     padding-bottom: clamp(3.75rem ,2.7281021898rem + 5.1094890511vw ,8.125rem)
   }
+  .hero__decor-left {
+    width: clamp(9.375rem ,4.2655109489rem + 25.5474452555vw ,31.25rem)
+  }
+  .hero__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+  }
   .hero__title {
     font-size: clamp(2.25rem ,1.0237226277rem + 6.1313868613vw ,7.5rem)
   }
@@ -2988,14 +3106,32 @@ textarea {
   .hero__item-description {
     font-size: clamp(1.25rem ,1.1332116788rem + .5839416058vw ,1.75rem)
   }
+  .benefits__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .benefits__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+  }
   .benefits__title {
     font-size: clamp(1.125rem ,.9790145985rem + .7299270073vw ,1.75rem)
+  }
+  .steps__decor-left {
+    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+  }
+  .steps__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
   }
   .item-steps {
     padding: clamp(.625rem ,.1870437956rem + 2.1897810219vw ,2.5rem)
   }
   .item-steps__title {
     font-size: clamp(1.875rem ,1.6998175182rem + .8759124088vw ,2.625rem)
+  }
+  .courses__decor-left {
+    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+  }
+  .courses__decor-right {
+    width: clamp(18.75rem ,14.3704379562rem + 21.897810219vw ,37.5rem)
   }
   .item-courses {
     padding: clamp(.625rem ,.3330291971rem + 1.4598540146vw ,1.875rem)
@@ -3029,6 +3165,12 @@ textarea {
   }
   .popup__text p {
     padding-left: clamp(.0000000625rem ,-.2919707258rem + 1.4598539416vw ,1.25rem)
+  }
+  .feedback__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .feedback__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
   }
   .feedback__title {
     margin-bottom: clamp(-1.25rem ,-1.6879562044rem + 2.1897810219vw ,.625rem)
@@ -3093,6 +3235,12 @@ textarea {
   .item-feedback__image {
     height: clamp(.9375rem ,.8061131387rem + .6569343066vw ,1.5rem)
   }
+  .advantages__decor-left {
+    width: clamp(9.375rem ,3.9881386861rem + 26.9343065693vw ,32.4375rem)
+  }
+  .advantages__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
+  }
   .advantages__label {
     margin-bottom: clamp(2.5rem ,2.2080291971rem + 1.4598540146vw ,3.75rem)
   }
@@ -3104,6 +3252,12 @@ textarea {
   }
   .advantages__item-title {
     font-size: clamp(1.25rem ,1.0748175182rem + .8759124088vw ,2rem)
+  }
+  .qa__decor-left {
+    width: clamp(9.375rem ,5.9589416058rem + 17.0802919708vw ,24rem)
+  }
+  .qa__decor-right {
+    width: clamp(9.375rem ,2.8056569343rem + 32.8467153285vw ,37.5rem)
   }
   .popup__subtitle--form {
     font-size: clamp(1.25rem ,.9288321168rem + 1.6058394161vw ,2.625rem)
