@@ -2665,6 +2665,9 @@ textarea {
   .menu__list {
     row-gap: 1.375rem
   }
+  [class*=decor] {
+    display: none
+  }
   .footer__column {
     justify-items: center
   }
@@ -2820,61 +2823,19 @@ textarea {
   .footer__link {
     text-transform: uppercase
   }
-  .hero__decor-left {
-    display: none
-  }
-  .hero__decor-right {
-    display: none
-  }
   .hero__actions {
     grid-template-columns: auto
   }
   .hero__more {
     grid-template-columns: auto
   }
-  .benefits__decor-left {
-    display: none
-  }
-  .benefits__decor-right {
-    display: none
-  }
-  .steps__decor-left {
-    display: none
-  }
-  .steps__decor-right {
-    display: none
-  }
-  .courses__decor-left {
-    display: none
-  }
-  .courses__decor-right {
-    display: none
-  }
   .courses__list {
     grid-template-columns: auto
-  }
-  .feedback__decor-left {
-    display: none
-  }
-  .feedback__decor-right {
-    display: none
   }
   .feedback__list {
     grid-template-columns: auto
   }
   .item-feedback:nth-child(even) {
-    display: none
-  }
-  .advantages__decor-left {
-    display: none
-  }
-  .advantages__decor-right {
-    display: none
-  }
-  .qa__decor-left {
-    display: none
-  }
-  .qa__decor-right {
     display: none
   }
   .contact__wrapper {
