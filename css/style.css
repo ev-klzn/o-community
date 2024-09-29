@@ -80,6 +80,9 @@ body {
   -ms-scroll-chaining: none;
   overscroll-behavior: none
 }
+.loaded body {
+  opacity: 1
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -597,7 +600,6 @@ body::after {
   width: 12.8125rem
 }
 .footer__link {
-  text-transform: capitalize;
   transition: color .3s;
   color: #dfe5e9;
   font-weight: 400;
