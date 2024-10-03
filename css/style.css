@@ -1438,7 +1438,7 @@ body::after {
 }
 .feedback__list {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   align-items: start;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
@@ -1455,6 +1455,8 @@ body::after {
   margin-top: .625rem
 }
 .item-feedback {
+  display: grid;
+  justify-content: center;
   position: relative;
   border-radius: .5rem;
   border: 1px solid #20acf5;
@@ -1540,6 +1542,10 @@ body::after {
 }
 .item-feedback__image {
   aspect-ratio: 24/24
+}
+.item-feedback__img {
+  aspect-ratio: 832/1180;
+  max-width: 25rem
 }
 .advantages__decor-left {
   position: absolute;
