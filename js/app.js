@@ -4015,14 +4015,7 @@
             lazy: true,
             effect: "fade",
             autoplay: {
-                delay: 12e3,
-                disableOnInteraction: false
-            },
-            loop: true,
-            lazy: true,
-            effect: "fade",
-            autoplay: {
-                delay: 12e3,
+                delay: 7e3,
                 disableOnInteraction: false
             },
             breakpoints: {},
