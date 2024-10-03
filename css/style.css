@@ -707,13 +707,6 @@ body::after {
   transform: translate(0,0);
   opacity: 1
 }
-.hero__actions {
-  display: grid;
-  justify-content: space-around;
-  align-items: center;
-  grid-template-columns: 1fr auto;
-  row-gap: 2.5rem
-}
 .hero__wrapper {
   display: grid;
   align-items: center;
@@ -722,7 +715,8 @@ body::after {
 .hero__more {
   display: grid;
   align-items: start;
-  grid-template-columns: auto
+  grid-template-columns: auto;
+  justify-items: center
 }
 .hero__item {
   display: grid;
@@ -2078,11 +2072,6 @@ textarea {
   .hero__text {
     margin-bottom: 6.25rem
   }
-  .hero__actions {
-    -webkit-column-gap: .625rem;
-    -moz-column-gap: .625rem;
-    column-gap: .625rem
-  }
   .hero__wrapper {
     row-gap: 2.5rem
   }
@@ -2421,11 +2410,6 @@ textarea {
   .hero__text {
     margin-bottom: 3.75rem
   }
-  .hero__actions {
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem
-  }
   .hero__wrapper {
     row-gap: .9375rem
   }
@@ -2720,6 +2704,11 @@ textarea {
     flex: 1 1 45%
   }
 }
+@media (max-width:62.06125em) {
+  .hero__wrapper {
+    margin-bottom: 1.875rem
+  }
+}
 @media (max-width:61.99875em) {
   .menu__list {
     row-gap: 1.375rem
@@ -2741,13 +2730,24 @@ textarea {
     width: 100%
   }
   .hero__more {
-    grid-template-columns: auto;
-    justify-items: center;
-    justify-content: stretch
+    grid-template-columns: auto auto;
+    justify-items: center
+  }
+  .hero__item {
+    max-width: 100%;
+    grid-template-columns: auto auto;
+    justify-content: center
   }
   .hero__item-image {
     width: 3.75rem;
     height: 3.75rem
+  }
+  .hero__item-body {
+    text-align: center
+  }
+  .hero__item-about {
+    text-align: center;
+    justify-content: center
   }
   .courses__list {
     grid-template-columns: repeat(2,1fr)
@@ -2757,6 +2757,11 @@ textarea {
   }
   .advantages__list {
     flex-direction: column
+  }
+}
+@media (max-width:61.99875em)and (max-width:20em) {
+  .hero__item {
+    gap: .0000000625rem
   }
 }
 @media (max-width:50.625em) {
@@ -2884,8 +2889,7 @@ textarea {
   }
   .hero__more {
     grid-template-columns: auto;
-    justify-items: normal;
-    justify-content: stretch
+    justify-items: normal
   }
   .courses__list {
     grid-template-columns: auto
@@ -2911,11 +2915,6 @@ textarea {
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
-  }
-}
-@media (max-width:39.375em) {
-  .hero__actions {
-    grid-template-columns: auto
   }
 }
 @media (max-width:29.99875em) {
@@ -3034,11 +3033,6 @@ textarea {
   }
   .hero__text {
     margin-bottom: clamp(3.75rem ,3.1660583942rem + 2.9197080292vw ,6.25rem)
-  }
-  .hero__actions {
-    -webkit-column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem);
-    -moz-column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem);
-    column-gap: clamp(.625rem ,1.3959854015rem + -.7299270073vw ,1.25rem)
   }
   .hero__wrapper {
     row-gap: clamp(.9375rem ,.5725364964rem + 1.8248175182vw ,2.5rem)
@@ -3242,6 +3236,16 @@ textarea {
 @media (min-width:62em)and (max-width:105.625em) {
   .hero__item {
     padding: clamp(.625rem ,-.263252149rem + 1.4326647564vw ,1.25rem)
+  }
+}
+@media (max-width:61.99875em)and (min-width:105.625em) {
+  .hero__item {
+    gap: 2.5rem
+  }
+}
+@media (max-width:61.99875em)and (min-width:20em)and (max-width:105.625em) {
+  .hero__item {
+    gap: clamp(.0000000625rem ,-.5839415287rem + 2.9197079562vw ,2.5rem)
   }
 }
 @media (min-width:48em)and (max-width:105.625em) {
