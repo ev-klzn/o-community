@@ -4,7 +4,7 @@
 <head>
 	<title>O-COMMUNITY</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20241003172840" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241003183150" />
 	<meta name="robots" content="noindex, nofollow" />
 	<style>
 		body {
@@ -547,10 +547,10 @@
 								<div class="item-courses__price">499$</div>
 							</div>
 							<div class="item-courses__actions">
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button">
+								<button data-watch-threshold="0.6" data-watch data-watch-once data-popup="#model-card" type="submit" class="item-courses__button button">
 									оплатить картой
 								</button>
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button">
+								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" data-popup="#model-crypt" class="item-courses__button button">
 									оплатить криптой
 								</button>
 								<a href="#" data-watch-threshold="0.6" data-watch data-watch-once data-popup="#popup-beginner" class="item-courses__button item-courses__button--expanded button button--transparent">
@@ -611,10 +611,10 @@
 								<div class="item-courses__price">999$</div>
 							</div>
 							<div class="item-courses__actions">
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button button--fw">
+								<button data-watch-threshold="0.6" data-watch data-watch-once data-popup="#producer-card" type="submit" class="item-courses__button button button--fw">
 									оплатить картой
 								</button>
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button">
+								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" data-popup="#producer-crypt" class="item-courses__button button">
 									оплатить криптой
 								</button>
 								<a href="#" data-watch-threshold="0.6" data-watch data-watch-once data-popup="#popup-middle" class="item-courses__button item-courses__button--expanded button button--transparent">
@@ -677,10 +677,10 @@
 								<div class="item-courses__price">1499$</div>
 							</div>
 							<div class="item-courses__actions">
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button">
+								<button data-watch-threshold="0.6" data-watch data-watch-once data-popup="#pro-card" type="submit" class="item-courses__button button">
 									оплатить картой
 								</button>
-								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" class="item-courses__button button">
+								<button data-watch-threshold="0.6" data-watch data-watch-once type="submit" data-popup="#pro-crypt" class="item-courses__button button">
 									оплатить криптой
 								</button>
 								<a href="#" data-watch-threshold="0.6" data-watch data-watch-once data-popup="#popup-expert" class="item-courses__button item-courses__button--expanded button button--transparent">
@@ -2189,6 +2189,7 @@
 				</div>
 			</div>
 		</div>
+		<!--  -->
 		<div id="popup-form" aria-hidden="true" class="popup popup--form">
 			<div class="popup__wrapper popup__wrapper--form">
 				<div class="popup__content popup__content--form">
@@ -2226,8 +2227,232 @@
 				</div>
 			</div>
 		</div>
+		<!--  -->
+		<div id="model-card" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Модель</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="model" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="producer-card" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Продюсер</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="producer" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pro-card" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Продюсер Pro</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="pro" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div id="model-crypt" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Модель</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="model-crypt" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="producer-crypt" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Продюсер</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="producer-crypt" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pro-crypt" aria-hidden="true" class="popup popup--form">
+			<div class="popup__wrapper popup__wrapper--form">
+				<div class="popup__content popup__content--form">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__body popup__body--form">
+						<h3 class="popup__subtitle popup__subtitle--form subtitle subtitle--center">
+							Купить курс <span>Продюсер Pro</span>
+						</h3>
+						<div class="contact">
+							<div class="contact__form">
+								<div data-watch class="contact__label contact__label--center">
+									Наши консультанты в кратчайшие сроки свяжутся с Вами и уточнят все
+									дальшейшие действия
+								</div>
+								<form netlify id="contact" name="pro-crypt" class="form">
+									<div class="contact__wrapper">
+										<input type="text" name="form[name]" id="name" data-error="Incorect name" data-required="text" autocomplete="off" required placeholder="Имя *" class="contact__input input" />
+										<input data-validate required type="email" name="form[email]" id="email" data-error="Incorect email" data-required="email" autocomplete="off" placeholder="E-mail *" class="contact__input input" />
+										<input pattern="^\d{10,12}$" type="tel" name="form[tel]" id="tel" autocomplete="off" placeholder="Телефон" class="contact__input input" />
+										<textarea required data-autoheight id="message" class="contact__input input" name="form[message]" placeholder="Сообщение *"></textarea>
+									</div>
+
+									<button data-watch type="submit" class="contact__button button">
+										купить курс
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20241003172840"></script>
+	<script src="js/app.min.js?_v=20241003183150"></script>
 </body>
 
 </html>
