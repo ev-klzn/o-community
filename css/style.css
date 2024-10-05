@@ -446,6 +446,9 @@ body::after {
 .subtitle span {
   color: #20acf5
 }
+.subtitle--seccess {
+  margin-bottom: 1.25rem
+}
 [class*="--blue"] {
   color: #20acf5
 }
@@ -648,6 +651,17 @@ body::after {
 }
 .hero__container {
   position: relative
+}
+.hero__container--seccess {
+  display: grid;
+  max-width: -webkit-max-content;
+  max-width: max-content;
+  justify-items: center;
+  justify-content: center
+}
+.hero__label {
+  margin-bottom: 1.875rem;
+  line-height: 1.2
 }
 .hero__title {
   font-weight: 900;

@@ -18,100 +18,21 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<a href="#" data-goto-header data-goto=".hero" class="header__logo">
-					<img class="header__logo-img ibg ibg--contain" src="img/icons/logo.webp " alt="logo" />
-				</a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li data-goto-header data-goto=".courses" class="menu__item">
-								<a class="menu__link" href="#">Курсы</a>
-							</li>
-							<li data-goto-header data-goto=".steps" class="menu__item">
-								<a class="menu__link" href="#">Как мы работаем</a>
-							</li>
-							<li data-goto-header data-goto=".feedback" class="menu__item">
-								<a class="menu__link" href="#">Отзывы</a>
-							</li>
-							<li data-goto-header data-goto=".hero" class="menu__item">
-								<a class="menu__link" href="#">Контакты</a>
-							</li>
-							<li class="menu__item">
-								<div class="selector">
-									<span class="selectorbutton">RU</span>
-									<div class="selectordropdown">
-										<a href="#">ENG</a>
-										<a href="#">ESP</a>
-									</div>
-								</div>
-								<!-- <ul class="language-switcher">
-              <li>
-                <a class="menu__link menu__link--switcher" href="#">РУС</a>
-              </li>
-              <li>
-                <a class="menu__link menu__link--switcher" href="#">ENG</a>
-              </li>
-              <li>
-                <a class="menu__link menu__link--switcher" href="#">ESP</a>
-              </li>
-            </ul> -->
-							</li>
-						</ul>
-					</nav>
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container hero__container--seccess">
+					<h1 class="subtitle subtitle--center subtitle--seccess">
+						<span>Спасибо</span> за покупку!
+					</h1>
+					<div class="hero__label hero__label--center">
+						Менеджер свяжется с Вами в ближайшее время
+					</div>
+					<a data-watch class="button button--seccess" href="./">На главную страницу</a>
 				</div>
-				<button aria-label="icon menu" type="button" class="icon-menu">
-					<span></span>
-				</button>
-			</div>
-		</header>
-		<!--  -->
-
-		<main class="page"></main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__top">
-					<div class="footer__column">
-						<div class="footer__item">
-							<a href="#" data-goto-header data-goto=".hero">
-								<img class="footer__logo ibg" src="img/icons/logo-f.webp" alt="Image" />
-							</a>
-						</div>
-					</div>
-					<div class="footer__column footer__column--row">
-						<div class="footer__pay">
-							<img class="footer__image ibg" src="img/icons/mc.svg" alt="Image" />
-						</div>
-						<div class="footer__pay">
-							<img class="footer__image ibg" src="img/icons/visa.svg" alt="Image" />
-						</div>
-						<div class="footer__pay">
-							<img class="footer__image-pay ibg" src="img/icons/gp.svg" alt="Image" />
-						</div>
-					</div>
-					<div class="footer__column">
-						<a data-goto-header data-goto=".courses" href="#" class="footer__link">Курсы</a>
-						<a data-goto-header data-goto=".feedback" href="#" class="footer__link">Отзывы студентов</a>
-					</div>
-					<div class="footer__column">
-						<a data-goto-header data-goto=".hero" href="#" class="footer__link">Контакты</a>
-						<a data-goto-header data-goto=".steps" href="#" class="footer__link">Как мы работаем
-						</a>
-					</div>
-					<div class="footer__column">
-						<a href="offer.html" class="footer__link">Договор</a>
-						<a href="policy.html" class="footer__link">Политика приватности</a>
-					</div>
-				</div>
-				<div class="footer__copy">
-					<div class="footer__copy-ars">© 2024 All rights reserved</div>
-					<a target="_blank" class="footer__copy-link" href="https://ev-klzn.com/">created by ev-klzn
-					</a>
-				</div>
-			</div>
-		</footer>
-
+			</section>
+		</main>
+		<footer class="footer"></footer>
 	</div>
 	<div>
 		<div id="popup-beginner" aria-hidden="true" class="popup">
