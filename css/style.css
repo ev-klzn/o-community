@@ -144,6 +144,10 @@ body {
 .button--bg {
   background-color: #000b12
 }
+.button--pay {
+  display: block;
+  min-width: 15.625rem
+}
 .button--fw {
   width: 100%
 }
@@ -1877,6 +1881,10 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover
+}
+.pay {
+  display: grid;
+  justify-items: center
 }
 .swiper {
   overflow: hidden
