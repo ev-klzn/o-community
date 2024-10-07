@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /*.css
+Allow: /*.webp
+Allow: /*.js
+
+Sitemap: https://o-community.vip/sitemap.xml
+Host: https://o-community.vip/
