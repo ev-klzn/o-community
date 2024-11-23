@@ -1,3 +1,3 @@
 # o-community
 
-https://ev-klzn.com/o-co/
+https://webintersol.com/o-co/
